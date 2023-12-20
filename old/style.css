@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&family=Poppins:wght@300;400&family=The+Nautigal:wght@700&display=swap');
+
+:root{
+    --primary-color : #f35500;
+    --standard-color: #fff;
+    --tenne-dark: #b54507;
+    --bg-color:#0c0044;
+    --text-color: #333;
+    --text-color:rgb(202, 202, 202);
+    --font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    min-height: 100vh;
+    text-align: center; 
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(223, 223, 223);
+}
+
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.5rem;
+
+}
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container{
+    min-height: 100vh;
+    
+}
+.meal-wrapper{
+    min-width: 120px;
+    margin: 0 auto;
+    background-color: var(--standard-color);
+    text-align: center;
+}
+.meal-search{
+    margin: 2rem 0;
+}
+.meal-search cite{
+    font-size: 1rem;
+}
+.meal-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.search-control,
+.search-btn{
+    width: 100%;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--primary-color);
+    border-top-left-radius:2rem ;
+    border-bottom-left-radius:2rem ;
+}
+.search-control::placeholder{
+    color: var(--primary-color);
+}
+.search-btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background-color: var(--primary-color);
+    color: var(--standard-color);
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.4 linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn:hover{
+    background-color: var(--tenne-dark);
+}
+.meal-result{
+    margin-top: 4rem;
+    margin: 4rem;
+    text-align: center;
+}
+#meal{
+    margin: 2.4rem 0;
+   
+}
+.meal-item{
+    border-radius: 1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0,0,0,0.79) ;
+    margin: 2rem 0 ;
+}
+.meal-name{
+    padding: 1.5rem 0.5rem;
+}
+.meal-name h3{
+    font-size: 1.4rem;
+}
+.recipe-btn{
+    text-decoration: none;
+    color: var(--standard-color);
+    background-color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 2rem;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
+    transition: all 0.4 linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.recipe-btn:hover{
+    background-color: var(--tenne-dark);
+}
+
+/* meal details */
+.meal-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: var(--standard-color);
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    display: none;
+    /* visibility: hidden; */
+    padding: 2rem 0;
+}
+.meal-details::-webkit-scrollbar{
+    width: 10px;
+}
+.meal-details::-webkit-scrollbar-thumb{
+    background-color: #f0f0f0;
+    border-radius: 2rem;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
+} 
+/* js related */
+.showRecipe{
+    display: block;
+}
+.meal-details-content{
+    margin: 2rem;
+}
+.meal-details-content p:not(.recipe-category){
+    padding: 1rem 0;
+}
+.recipe-close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    /* border-radius: 50%; */
+    font-size: 1.8rem;
+    font-weight: 900;
+    border: none;
+    background-color: var(--standard-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.recipe-close-btn i{
+    font-weight: 900;
+}
+.recipe-title{
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+.recipe-category{
+    background-color: var(--standard-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius:0.3rem;
+    -moz-border-radius:0.3rem;
+    -ms-border-radius:0.3rem;
+    -o-border-radius:0.3rem;
+}
+.recipe-intruct{
+    padding: 1rem 0;
+}
+.recipe-meal-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    margin: 0 auto;
+    display: block;
+
+}
+.recipe-link{
+    margin: 1.4rem 0;
+}
+.recipe-link a{
+    color: var(--standard-color);
+    font-size: 1.2rem;
+    /* text-decoration: none; */
+    font-weight: 700;
+    transition: all 0.4s linear;
+    -webkit-transition:  all 0.4s linear;
+    -moz-transition:  all 0.4s linear;
+    -ms-transition:  all 0.4s linear;
+    -o-transition:  all 0.4s linear;
+}
+.recipe-link a:hover{
+    opacity: 0.8;
+}
+.notfound{
+    /* position: absolute; */
+    grid-template-columns: 1fr !important;
+    color:  var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    /* height: 300px; */
+}
+
+@media  (min-width:600px){
+    .meal-search-box{
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #meal{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem !important;
+    }
+    .meal-item{
+        margin: 0;
+    }
+    .meal-details{
+        width: 500px;
+    }
+     
+}
+@media  screen and (min-width: 992px ){
+    body{
+        color: var(--bg-color) ;
+    }
+    #meal{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2rem ;
+    }
+    .meal-item{
+        margin: 0;
+    }
+     
+}
+
+
+
+#meal{
+    position: relative;
+    width: 100%;
+    height: auto; 
+}
+
+
+.loading-meal{ 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.842);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-effect {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+  
+.loading-effect div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid orangered;
+    border-radius: 50%;
+    animation: loading-effect 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: orangered transparent transparent transparent;
+}
+
+.loading-effect div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.loading-effect div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.loading-effect div:nth-child(3) {
+    animation-delay: -0.15s;  
+}
+
+  @keyframes loading-effect {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.loading-meal.active{
+    display: none;
+} 
+ 

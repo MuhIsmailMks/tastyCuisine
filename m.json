@@ -1,0 +1,32 @@
+[
+    {
+        "image":"/images/samsung",
+        "nameProduct":"samsung galaxy fold",
+        "price":2004,
+        "category":"device"
+    },
+    {
+        "image":"/images/samsung",
+        "nameProduct":"samsung galaxy fold",
+        "price":2004,
+        "category":"device"
+    },
+    {
+        "image":"/images/samsung",
+        "nameProduct":"samsung galaxy fold",
+        "price":2004,
+        "category":"device"
+    },
+    {
+        "image":"/images/samsung",
+        "nameProduct":"samsung galaxy fold",
+        "price":2004,
+        "category":"device"
+    },
+    {
+        "image":"/images/samsung",
+        "nameProduct":"samsung galaxy fold",
+        "price":2004,
+        "category":"smart home"
+    }
+]

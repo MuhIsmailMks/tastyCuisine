@@ -1,0 +1,1210 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Mirza:wght@400;500;600&family=Radio+Canada:wght@300;400;500;600&family=Molengo&display=&family=Sniglet&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #141414;
+}
+
+.title h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 500;
+  font-size: 3.75rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 5.625rem;
+}
+@media screen and (max-width: 600px) {
+  .title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.line {
+  height: 3px;
+  position: relative;
+  background-color: #F35500;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: white;
+  border: 2px solid white;
+  background-color: #0A0A0A;
+  width: 148px;
+  height: 38px;
+  outline: none;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .read-more {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .read-more {
+    width: auto;
+    height: auto;
+    padding: 0.3rem 1rem;
+  }
+}
+
+.container {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgb(66, 66, 66);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.header-container::before {
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: #141414;
+}
+.header-container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5.375rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1500px;
+}
+@media screen and (max-width: 1100px) {
+  .header-container header {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-container header {
+    padding: 0 1rem;
+  }
+}
+.header-container header .logo,
+.header-container header nav,
+.header-container header .navbar,
+.header-container header .accessibility {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-container header .navbar {
+  width: 70%;
+  z-index: 99;
+  justify-content: space-between;
+}
+.header-container header .logo img {
+  height: 45px;
+  position: relative;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 999;
+}
+.header-container header nav ul {
+  display: flex;
+  align-items: center;
+}
+.header-container header nav ul li {
+  list-style: none;
+}
+.header-container header nav ul li a {
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  color: white;
+}
+@media screen and (max-width: 450px) {
+  .header-container header nav ul li a {
+    font-size: 0.85rem;
+  }
+}
+.header-container header .accessibility {
+  gap: 2.313rem;
+}
+.header-container header .accessibility span {
+  cursor: pointer;
+}
+.header-container header .accessibility span img {
+  height: 25px;
+  width: auto;
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header-container header .menu-button {
+  display: none;
+  position: relative;
+  z-index: 99;
+}
+
+.hero-section {
+  position: relative;
+  height: auto;
+  width: 100%;
+  height: 614px;
+}
+.hero-section .hero-image {
+  position: relative;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.hero-section .hero-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-section .hero-content {
+  padding: 0 5.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 1100px) {
+  .hero-section .hero-content {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-section .hero-content {
+    padding: 0 1rem;
+  }
+}
+.hero-section .hero-content h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2.813rem;
+  color: white;
+  width: 493px;
+  max-width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  .hero-section .hero-content h1 {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-section .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-section .hero-content h1 {
+    font-size: 1.75rem;
+  }
+}
+.hero-section .hero-content h1 span {
+  color: #F35500;
+}
+.hero-section .hero-content p {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  width: 524px;
+  max-width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  .hero-section .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero-section .hero-content p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-section .hero-content p {
+    font-size: 0.9rem;
+  }
+}
+
+.about-us {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 8rem auto;
+}
+.about-us .col-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5.375rem;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 2rem auto;
+}
+@media screen and (max-width: 1100px) {
+  .about-us .col-container {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-us .col-container {
+    padding: 0 1rem;
+  }
+}
+.about-us .col-container .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+  height: 415px;
+  width: 468px;
+  max-width: 32vw;
+  padding: 1rem 0;
+  position: relative;
+  box-shadow: 0px 7px 31.5px -2px #000000;
+  background-color: #141414;
+}
+.about-us .col-container .content h3 {
+  font-family: "Mirza", serif;
+  color: #F35500;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.about-us .col-container .content p {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+@media screen and (max-width: 1100px) {
+  .about-us .col-container .content p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-us .col-container .content p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-us .col-container .content p {
+    font-size: 0.9rem;
+  }
+}
+.about-us .col-container .content .line {
+  width: 80%;
+  margin-top: 1.5rem;
+}
+.about-us .col-container .content h5 {
+  font-family: "Mirza", serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.563rem;
+  margin: 1rem auto;
+}
+.about-us .col-container .image {
+  width: 349px;
+  height: 415px;
+  position: relative;
+  cursor: pointer;
+}
+.about-us .col-container .image::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3411764706);
+}
+.about-us .col-container .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.meals-section {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 9rem 0;
+}
+.meals-section .no-meal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 500;
+  font-size: 3.75rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 5.625rem;
+}
+@media screen and (max-width: 600px) {
+  .meals-section .no-meal {
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+.meals-section .search-meal {
+  margin: 0 auto;
+  width: 606px;
+  height: 38px;
+  position: relative;
+  max-width: 90%;
+}
+.meals-section .search-meal input {
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  background: #202020;
+  box-shadow: 0px 4px 6.3px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Sniglet", serif;
+  color: white;
+  font-size: 1.063rem;
+  outline: none;
+  border: none;
+}
+.meals-section .search-meal input::-moz-placeholder {
+  color: #B6B6B6;
+}
+.meals-section .search-meal input::placeholder {
+  color: #B6B6B6;
+}
+.meals-section .search-meal button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #F35500;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.meals-section .meal-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 0 5.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem 0.5rem;
+  margin: 2rem auto;
+  max-width: 1400px;
+  min-height: 400px;
+}
+@media screen and (max-width: 1100px) {
+  .meals-section .meal-container {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .meals-section .meal-container {
+    padding: 0 1rem;
+  }
+}
+.meals-section .meal-container .loading-meal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 76;
+  background-color: rgba(0, 0, 0, 0.925);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meals-section .meal-container .loading-meal.hide {
+  display: none;
+}
+.meals-section .meal-container .loading-meal .loading-effect {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.meals-section .meal-container .loading-meal .loading-effect div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid orangered;
+  border-radius: 50%;
+  animation: loading-effect 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: orangered transparent transparent transparent;
+}
+.meals-section .meal-container .loading-meal .loading-effect div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.meals-section .meal-container .loading-meal .loading-effect div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.meals-section .meal-container .loading-meal .loading-effect div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes loading-effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.meals-section .meal-container .meal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 452px;
+  width: 270px;
+  max-width: 49%;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #1B1B1B;
+}
+.meals-section .meal-container .meal.hide {
+  display: none;
+}
+.meals-section .meal-container .meal img {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.meals-section .meal-container .meal .about-meal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.35rem 0.55rem;
+}
+.meals-section .meal-container .meal .about-meal .type-meal {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+  font-size: 0.938rem;
+  font-weight: 400;
+  color: white;
+}
+.meals-section .meal-container .meal .about-meal .type-meal p {
+  font-family: "Sniglet", serif;
+}
+.meals-section .meal-container .meal .about-meal .type-meal h4 {
+  font-family: "Merriweather", serif;
+}
+.meals-section .meal-container .meal .about-meal .name h4 {
+  font-family: "Radio Canada", serif;
+  margin: 0.5rem 0;
+  color: white;
+  height: 95px;
+  text-align: center;
+}
+.meals-section .meal-container .meal .about-meal button {
+  background-color: #F35500;
+  padding: 0.25rem 1.3rem;
+  border: none;
+  outline: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-family: "Radio Canada", serif;
+  font-size: 1.063rem;
+  color: white;
+}
+.meals-section .load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F35500;
+  font-family: "Radio Canada", serif;
+  color: white;
+  font-size: 1.313rem;
+  width: 180px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.meals-section .load-more.hide {
+  display: none;
+}
+
+.about-meal-container {
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+.about-meal-container .meal-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 95%;
+  width: 1280px;
+  max-height: 95%;
+  height: 689px;
+  background-color: #141414;
+  position: absolute;
+  padding: 2.563rem 1.938rem;
+}
+.about-meal-container .meal-detail .close-btn {
+  position: absolute;
+  right: 1.938rem;
+  top: 2.563rem;
+  z-index: 3;
+  background-color: #141414;
+}
+.about-meal-container .meal-detail .close-btn img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+.about-meal-container .meal-detail .image-source {
+  width: 546px;
+  height: auto;
+  max-height: 100%;
+}
+.about-meal-container .meal-detail .image-source img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-meal-container .meal-detail .image-source .source {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-top: 1.188rem;
+}
+.about-meal-container .meal-detail .image-source .source section {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 9px;
+}
+.about-meal-container .meal-detail .image-source .source section .section-title {
+  width: 90px;
+}
+.about-meal-container .meal-detail .image-source .source section h2,
+.about-meal-container .meal-detail .image-source .source section span {
+  font-family: "Merriweather", serif;
+  color: #F35500;
+  font-size: 1.25rem;
+}
+.about-meal-container .meal-detail .image-source .source section a {
+  color: white;
+  font-family: "Molengo", sans-serif;
+  font-size: 1.125rem;
+  width: 80%;
+  outline: none;
+}
+.about-meal-container .meal-detail .meal-details {
+  width: 619px;
+  min-height: 100%;
+  height: auto;
+  max-height: 95%;
+  position: relative;
+  overflow-y: scroll;
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+@media screen and (max-width: 1100px) {
+  .about-meal-container .meal-detail .meal-details {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-meal-container .meal-detail .meal-details {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-meal-container .meal-detail .meal-details {
+    font-size: 0.9rem;
+  }
+}
+.about-meal-container .meal-detail .meal-details::-webkit-scrollbar {
+  width: 5px;
+}
+.about-meal-container .meal-detail .meal-details::-webkit-scrollbar-track {
+  background: #5a5a5a;
+  border-radius: 10px;
+}
+.about-meal-container .meal-detail .meal-details::-webkit-scrollbar-thumb {
+  background: #F35500;
+  border-radius: 10px;
+}
+.about-meal-container .meal-detail .meal-details h2 {
+  font-family: "Mirza", serif;
+  color: #F35500;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.about-meal-container .meal-detail .meal-details h4 {
+  font-family: "Merriweather", serif;
+  font-size: 1.8rem;
+  color: #F35500;
+}
+@media screen and (max-width: 600px) {
+  .about-meal-container .meal-detail .meal-details h4 {
+    font-size: 1.5rem;
+  }
+}
+.about-meal-container .meal-detail .meal-details .gradient-measure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: auto;
+  width: 100%;
+  gap: 7.5rem;
+  margin-top: 1rem;
+}
+.about-meal-container .meal-detail .meal-details .gradient-measure div {
+  width: 200px;
+  max-width: 100%;
+}
+.about-meal-container .meal-detail .meal-details .gradient-measure ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: start;
+}
+.about-meal-container .meal-detail .meal-details .intructions {
+  margin-top: 1.688rem;
+}
+.about-meal-container .meal-detail .meal-details .intructions h4 {
+  margin-bottom: 0.5rem;
+}
+.about-meal-container.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.information-section {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.information-section .information-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8rem;
+  max-width: 1250px;
+}
+.information-section .information-container .information {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  align-items: start;
+  flex-wrap: wrap;
+  height: auto;
+}
+.information-section .information-container .information:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.information-section .information-container .information:nth-child(2) .about-information .tag-lines {
+  justify-content: end;
+}
+.information-section .information-container .information .image {
+  width: 556px;
+  max-width: 100%;
+  height: auto;
+}
+.information-section .information-container .information .image img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.information-section .information-container .information .about-information {
+  width: 602px;
+  max-width: 100%;
+  position: relative;
+}
+.information-section .information-container .information .about-information .tag-lines {
+  display: flex;
+  align-items: center;
+  gap: 0.313rem;
+  margin-bottom: 1.75rem;
+}
+.information-section .information-container .information .about-information .tag-lines .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F35500;
+  width: 130px;
+  height: 30px;
+  letter-spacing: -0.17px;
+  color: white;
+  font-family: "Molengo", sans-serif;
+  font-size: 1.063rem;
+}
+.information-section .information-container .information .about-information .heading {
+  color: #F35500;
+  font-family: "Mirza", serif;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  font-size: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+.information-section .information-container .information .about-information p {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 3.25rem;
+}
+@media screen and (max-width: 1100px) {
+  .information-section .information-container .information .about-information p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .information-section .information-container .information .about-information p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .information-section .information-container .information .about-information p {
+    font-size: 0.9rem;
+  }
+}
+.information-section .information-container .information .about-information .read-more {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .about-us .col-container .content {
+    gap: 1rem;
+    height: auto;
+  }
+  .about-us .col-container .image {
+    width: 25vw;
+    height: auto;
+  }
+  .information-section .information-container .information .image {
+    width: 490px;
+  }
+  .information-section .information-container .information .about-information {
+    width: 50%;
+  }
+  .about-meal-container .meal-detail .image-source {
+    width: 45%;
+    overflow: hidden;
+  }
+  .about-meal-container .meal-detail .image-source .source section a {
+    max-width: 70%;
+    text-wrap: balance;
+    font-size: 1rem;
+  }
+  .about-meal-container .meal-detail .meal-details {
+    width: 50%;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure {
+    gap: 0;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure div {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header-container header .navbar {
+    z-index: 0;
+    padding: 2rem 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    background-color: #141414;
+    transition: all 0.4s ease-in-out;
+    top: 100%;
+    transform: translateY(-120%);
+    flex-direction: column;
+    border-bottom: 1px solid white;
+  }
+  .header-container header .navbar nav {
+    width: 100%;
+  }
+  .header-container header .navbar nav ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .header-container header .navbar nav ul li {
+    width: 100%;
+    height: 60px;
+    max-height: 10vh;
+    position: relative;
+  }
+  .header-container header .navbar nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .header-container header .navbar .accessibility {
+    gap: 20vw;
+  }
+  .header-container header .navbar.active {
+    transform: translateY(0%);
+  }
+  .header-container header .menu-button {
+    display: flex;
+    position: relative;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+  .header-container header .menu-button img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .about-us .col-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .about-us .col-container .content {
+    gap: 1rem;
+    width: 75vw;
+    height: auto;
+    max-width: 100%;
+    padding: 2rem 0;
+  }
+  .about-us .col-container .image {
+    width: 75vw;
+    height: 300px;
+  }
+  .meals-section .load-more {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 2rem;
+  }
+  .meals-section .meal-container {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .about-meal-container .meal-detail {
+    display: block;
+    overflow-y: auto;
+    height: 100%;
+    /* width */
+    /* Track */
+    /* Handle */
+  }
+  .about-meal-container .meal-detail::-webkit-scrollbar {
+    width: 5px;
+  }
+  .about-meal-container .meal-detail::-webkit-scrollbar-track {
+    background: #5a5a5a;
+    border-radius: 10px;
+  }
+  .about-meal-container .meal-detail::-webkit-scrollbar-thumb {
+    background: #F35500;
+    border-radius: 10px;
+  }
+  .about-meal-container .meal-detail .image-source {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .about-meal-container .meal-detail .image-source img {
+    width: 50%;
+  }
+  .about-meal-container .meal-detail .meal-details {
+    width: 100%;
+    height: auto;
+    min-height: 0%;
+    overflow: hidden;
+  }
+  .about-meal-container .meal-detail .meal-details .intructions h4,
+  .about-meal-container .meal-detail .meal-details h4 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure {
+    margin: 3rem 0;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure div {
+    width: 40%;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure div ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .about-meal-container .meal-detail .meal-details .intructions p {
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+  }
+  .information-section .information-container .information {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .information-section .information-container .information:nth-child(2) {
+    flex-direction: column;
+  }
+  .information-section .information-container .information:nth-child(2) .about-information .tag-lines {
+    justify-content: center;
+  }
+  .information-section .information-container .information .about-information {
+    width: 70%;
+  }
+  .information-section .information-container .information .about-information .tag-lines {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .information-section .information-container .information .about-information p {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero-section .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-section .hero-content h1 {
+    width: 90%;
+  }
+  .hero-section .hero-content p {
+    width: 80%;
+  }
+  .meals-section .search-meal {
+    height: 30px;
+  }
+  .meals-section .search-meal input {
+    font-size: 0.9rem;
+  }
+  .meals-section .search-meal img {
+    height: 20px;
+  }
+  .meals-section .meal-container .meal {
+    height: auto;
+    padding: 0 0 2rem 0;
+  }
+  .meals-section .meal-container .meal img {
+    height: 200px;
+  }
+  .about-meal-container .meal-detail .close-btn img {
+    height: 25px;
+    width: 25px;
+  }
+  .about-meal-container .meal-detail .image-source img {
+    height: auto;
+  }
+  .about-meal-container .meal-detail .image-source .source section h2,
+  .about-meal-container .meal-detail .image-source .source section span {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-container header .logo img {
+    height: 35px;
+  }
+  .header-container header .navbar .accessibility img {
+    height: 20px;
+  }
+  .header-container header .menu-button {
+    width: 30px;
+    height: 30px;
+  }
+  .about-us .col-container .content {
+    gap: 1rem;
+    width: 75vw;
+    height: auto;
+    max-width: 100%;
+    padding: 2rem 0;
+  }
+  .about-us .col-container .content h5 {
+    font-size: 1.34rem;
+    margin: 0.5rem 0;
+  }
+  .about-us .col-container .image {
+    width: 75vw;
+    height: 400px;
+  }
+  .meals-section .load-more {
+    font-size: 1rem;
+    padding: 0.4rem 1.5rem;
+  }
+  .meals-section .meal-container {
+    gap: 1rem;
+    padding: 0;
+    justify-content: center;
+  }
+  .meals-section .meal-container .meal {
+    width: 150px;
+    height: auto;
+    padding: 0 0 1rem 0;
+  }
+  .meals-section .meal-container .meal img {
+    height: 150px;
+  }
+  .meals-section .meal-container .meal .about-meal .type-meal {
+    font-size: 0.6rem;
+  }
+  .meals-section .meal-container .meal .about-meal button {
+    font-size: 0.65rem;
+    padding: 0.3rem 1rem;
+  }
+  .meals-section .meal-container .meal .about-meal .name h4 {
+    height: 50px;
+    font-size: 0.8rem;
+  }
+  .about-meal-container .meal-detail {
+    height: auto;
+  }
+  .about-meal-container .meal-detail .image-source {
+    max-width: 100%;
+  }
+  .about-meal-container .meal-detail .image-source .source section a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.9rem;
+  }
+  .about-meal-container .meal-detail .meal-details .name {
+    text-align: center;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure {
+    justify-content: center;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure div {
+    width: 40%;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure div ul li {
+    width: 80%;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  .about-meal-container .meal-detail .meal-details .gradient-measure div:nth-child(2) ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: self-end;
+  }
+  .information-section .information-container {
+    gap: 4rem;
+  }
+  .information-section .information-container .information .image {
+    width: 70%;
+  }
+  .information-section .information-container .information .about-information {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .information-section .information-container .information .about-information .heading {
+    font-size: 1.4rem;
+  }
+  .information-section .information-container .information .about-information p {
+    font-size: 0.9rem;
+    letter-spacing: 0.02rem;
+  }
+  .information-section .information-container .information .about-information .tag-lines .tag {
+    font-size: 0.8rem;
+    width: auto;
+    height: auto;
+    padding: 0.3rem 1rem;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 400px) {
+  .information-section .information-container .information .about-information .tag-lines .tag {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

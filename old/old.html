@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Lobster&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>food recipe API</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="meal-wrapper">
+          <div class="meal-search">
+            <h2 class="title">Find Meals For Your Ingredients</h2>
+          </div>
+        </div>
+       
+       <div class="meal-search-box">
+        <input type="text" class="search-control" placeholder="enter in Ingredients" id="search-input">
+        <button type="submit" class="search-btn btn" id="search-btn"><ion-icon name="search-outline"></ion-icon></button>
+       </div>
+    
+
+       <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
+          <div class="loading-meal"> 
+            <div class="loading-effect"><div></div><div></div><div></div><div></div></div>
+          </div>
+          <!-- meal item -->
+          <!-- <div class="meal-item">
+            <div class="meal-img">
+              <img src="img/burger.jpg" alt="">
+            </div>
+            <div class="meal-name">
+              <h3>potato chips</h3>
+              <a href="#" class="recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end meal item -->
+        </div>
+       </div>
+       
+        <div class="meal-details">
+          <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+            <i class="large material-icons">close</i>
+          </button>
+    
+          <div class="meal-details-content">
+            <!-- <h2 class="recipe-title">Meals Name Here</h2>
+            <p class="recipe-category">Category Name</p>
+            <div class="recipe-instruct">
+              <h3>instructions:</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nobis eos eius consectetur delectus fuga corporis! Possimus, labore laudantium.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque ducimus soluta molestias incidunt aspernatur voluptatum repellat nostrum eligendi nam maiores.</p>
+            </div>
+            <div class="recipe-meal-img">
+              <img src="img/burger.jpg" alt="">
+            </div>
+            <div class="recipe-link">
+              <a href="#" target="_blank">Watch Video</a>
+            </div> -->
+          </div>
+        </div>
+        
+     </div>
+     
+     <div class="meal-container">
+
+     </div>
+
+       <script src="index.js"></script> 
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+</body>
+</html>
