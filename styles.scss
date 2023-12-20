@@ -1099,7 +1099,7 @@ body{
         .meal-details{
             width: 100%; 
             height: auto; 
-            min-height: 0%;
+            min-height: 900px;
             overflow: hidden;
 
             .intructions h4,
@@ -1120,10 +1120,12 @@ body{
                 }
             }
 
-            .intructions p{
+            .intructions {
+
+                p{
                 line-height: 1.5;
                 letter-spacing: .4px;
-            }
+            }}
         }
     }
 
