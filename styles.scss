@@ -96,10 +96,7 @@ body{
     @media screen and (max-width:800px) {
         font-size: 1rem;
     }
-
-    @media screen and (max-width:600px) {
-        font-size: .9rem;
-    }
+ 
 } 
 
 @mixin title-section-text(){
@@ -113,6 +110,10 @@ body{
     @media screen and (max-width:600px) {
         font-size: 2.5rem;
         margin-bottom: 3.5rem;
+    }
+
+    @media screen and (max-width:400px) {
+        font-size: 2rem;
     }
 }
 
@@ -187,12 +188,14 @@ body{
 
 .title{ 
     @include flex();
+    // display: none;
     gap: 1rem;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 3.875rem;
     margin: 5rem 0 3rem;
+    max-width: 100%;
     
     &::before{ 
         content: "";
@@ -220,6 +223,24 @@ body{
         &::before{
             width: 7px;
         }
+    }
+    
+    @media screen and (max-width:600px) {
+        height: 2.5rem;
+        
+        h2{
+            line-height: 1.5;
+        }
+
+        &::before{
+            width: 5px;
+        }
+    }
+    
+    @media screen and (max-width:400px) { 
+        h2{
+            line-height: 1.8;
+        } 
     }
 }
 
@@ -837,12 +858,13 @@ body{
     
 }
 
-
 // information
 .information-section{
     @include default-container(); 
     @include flex-direction-col();
     margin: 4rem 0  ;
+    max-width: 100%;
+    overflow: hidden;
 
     .information-container{
         @include default-container();
@@ -933,8 +955,6 @@ body{
  
 }
 
-
-
 // service section
 .services-section{
     @include default-container();
@@ -970,7 +990,9 @@ body{
                 font-weight: 600;
                 font-size: 1.563rem;
                 color: white;
-                margin-bottom: .75rem;
+                margin-bottom: .4rem; 
+
+                height: 70px;
             }
 
             p{
@@ -978,10 +1000,120 @@ body{
                 font-size: 1.125rem;
                 color: #D0D0D0;
             }
+ 
+        }
+    }
+}
 
-            .about-information{
 
+// environment 
+.environment-care{
+    @include default-container();
+    @include flex-direction-col();
+    padding: 2rem 0;  
+
+    .intro{
+        display: flex;  
+        width: 100%;
+        margin: 2rem auto;
+        max-width: 1400px;
+        overflow: hidden;
+        gap: 2.375rem;
+
+        img{
+            width: 830px;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        section{
+            @include flex-direction-col();
+            @include default-container();
+            // width: 395px;
+            max-width: 100%; 
+            padding-right: 7.5rem;
+
+            .section-title{
+                @include flex-direction-col();
+                align-items: start;
+                gap: 0.938rem;
+
+
+                .line{
+                    width: 100px;
+                }
+    
+                h2,
+                h3{
+                    @include medium-title-text();
+                    color: white; 
+                    line-height: .8;
+                }
+    
+                h2{
+                    font-size: 2rem;
+                    letter-spacing: 0.92px;
+                }
+    
+                h3{
+                    font-size: 1.563rem;
+                }
             }
+
+            p{
+                @include common-text-style();
+                margin-top: 2.438rem;
+                color: #E6E6E6;  
+            }
+ 
+        }
+    }
+
+    .effort-container{
+        @include default-container();
+        @include flex-center();
+        flex-wrap: wrap;
+        gap: 2.188rem;
+        margin-top: 3.938rem;
+
+        .effort{
+            @include flex-direction-col();
+            gap: 10px;
+
+            width: 350px;
+            max-width: 90%;
+            height: auto;
+            position: relative;
+
+            .icon img{
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+
+            .underline{
+                @include flex-direction-col();
+                gap: 6px;
+
+                position: relative;
+                height: auto;
+
+                span{
+                    background-color: $primary-color;
+                    width: 2px;
+                    height: 15.83px;
+
+                }
+            }
+
+            p{
+                @include common-text-style();
+                text-align: center;
+                width: 100%;
+                color: #E6E6E6;
+            }
+            
         }
     }
 }
@@ -1037,6 +1169,20 @@ body{
                     width: 40%;
                 }
             }
+        }
+    }
+
+    // environment
+    .environment-care .intro{
+        
+        img{
+             width: 60%;
+             height: 400px;
+             object-fit: cover;
+        }
+
+        section{
+            padding-right: 7.5%;
         }
     }
 }
@@ -1241,6 +1387,51 @@ body{
 
             p{
                 margin-bottom: 2rem;
+            }
+        }
+    }
+
+
+    // services
+    .services-section .service-container{
+        gap: 2.5rem 2rem; 
+        .service{
+            padding: 1rem .8rem 0;
+            width: 300px;
+            max-width: 90%;
+
+            img{
+                height: 40px;
+            }
+
+            h3{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+      // environment
+      .environment-care .intro{
+        flex-direction: column;
+        img{
+             width: 100%;
+             height: 350px; 
+        }
+
+        section{ 
+            padding: 0 2rem;
+            text-align: center;
+
+            .section-title{
+                align-items: center;
+
+                h2{
+                    width: 55%;
+                }
+            }
+
+            p{
+                width: 60%;
             }
         }
     }
@@ -1478,7 +1669,71 @@ body{
             }
         
      }
+
+    //  service
+    .services-section .service-container .service{
+        height: auto;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        h3{
+            height: auto;
+            margin-bottom: .5rem;
+        }
+    }
  
+    
+    // environment 
+    .environment-care{
+        
+        .intro{
+            margin: 0;
+
+            img{
+            height: 250px;   
+            }
+
+            section{
+    
+                .section-title{
+                    h2{
+                        width: 100%;
+                        font-size: 1.4rem;
+                    }
+
+                    h3{
+                        font-size: 1.3rem;
+                    }
+                }
+
+                p{
+                    width: 100%;
+                }
+            }
+        }
+
+        .effort-container .effort{
+            margin-bottom: 1rem;
+            
+            .icon img{
+                height: 40px;
+                width: 40px;
+            }
+
+            .underline{
+                gap: 4px;
+
+                @media screen and (max-width:400px) {
+                    span{
+                        height: 13px;
+                    }
+                }
+            }
+
+            p{
+                width: 90%;
+            }
+        }
+    }
 }
 
 

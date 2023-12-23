@@ -22,6 +22,7 @@ body {
   position: relative;
   height: 3.875rem;
   margin: 5rem 0 3rem;
+  max-width: 100%;
 }
 .title::before {
   content: "";
@@ -50,6 +51,11 @@ body {
     margin-bottom: 3.5rem;
   }
 }
+@media screen and (max-width: 400px) {
+  .title h2 {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 1100px) {
   .title {
     height: 3rem;
@@ -57,6 +63,22 @@ body {
   }
   .title::before {
     width: 7px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    height: 2.5rem;
+  }
+  .title h2 {
+    line-height: 1.5;
+  }
+  .title::before {
+    width: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title h2 {
+    line-height: 1.8;
   }
 }
 
@@ -291,11 +313,6 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .hero-section .hero-content p {
-    font-size: 0.9rem;
-  }
-}
 
 .about-us {
   position: relative;
@@ -362,11 +379,6 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .about-us .col-container .content p {
-    font-size: 0.9rem;
-  }
-}
 .about-us .col-container .content .line {
   width: 80%;
   margin-top: 1.5rem;
@@ -424,6 +436,11 @@ body {
   .meals-section .no-meal {
     font-size: 2.5rem;
     margin-bottom: 3.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .meals-section .no-meal {
+    font-size: 2rem;
   }
 }
 .meals-section .search-meal {
@@ -722,11 +739,6 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .about-meal-container .meal-detail .meal-details {
-    font-size: 0.9rem;
-  }
-}
 .about-meal-container .meal-detail .meal-details::-webkit-scrollbar {
   width: 5px;
 }
@@ -797,6 +809,8 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 4rem 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 .information-section .information-container {
   position: relative;
@@ -886,11 +900,6 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .information-section .information-container .information .about-information p {
-    font-size: 0.9rem;
-  }
-}
 .information-section .information-container .information .about-information .read-more {
   margin: 0 auto;
 }
@@ -933,7 +942,8 @@ body {
   font-weight: 600;
   font-size: 1.563rem;
   color: white;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.4rem;
+  height: 70px;
 }
 .services-section .service-container .service p {
   font-family: "Molengo", sans-serif;
@@ -953,11 +963,145 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .services-section .service-container .service p {
-    font-size: 0.9rem;
+
+.environment-care {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.environment-care .intro {
+  display: flex;
+  width: 100%;
+  margin: 2rem auto;
+  max-width: 1400px;
+  overflow: hidden;
+  gap: 2.375rem;
+}
+.environment-care .intro img {
+  width: 830px;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.environment-care .intro section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 7.5rem;
+}
+.environment-care .intro section .section-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.938rem;
+}
+.environment-care .intro section .section-title .line {
+  width: 100px;
+}
+.environment-care .intro section .section-title h2,
+.environment-care .intro section .section-title h3 {
+  font-family: "Mirza", serif;
+  color: #F35500;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: white;
+  line-height: 0.8;
+}
+.environment-care .intro section .section-title h2 {
+  font-size: 2rem;
+  letter-spacing: 0.92px;
+}
+.environment-care .intro section .section-title h3 {
+  font-size: 1.563rem;
+}
+.environment-care .intro section p {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  margin-top: 2.438rem;
+  color: #E6E6E6;
+}
+@media screen and (max-width: 1100px) {
+  .environment-care .intro section p {
+    font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 800px) {
+  .environment-care .intro section p {
+    font-size: 1rem;
+  }
+}
+.environment-care .effort-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.188rem;
+  margin-top: 3.938rem;
+}
+.environment-care .effort-container .effort {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+  max-width: 90%;
+  height: auto;
+  position: relative;
+}
+.environment-care .effort-container .effort .icon img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.environment-care .effort-container .effort .underline {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  height: auto;
+}
+.environment-care .effort-container .effort .underline span {
+  background-color: #F35500;
+  width: 2px;
+  height: 15.83px;
+}
+.environment-care .effort-container .effort p {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  width: 100%;
+  color: #E6E6E6;
+}
+@media screen and (max-width: 1100px) {
+  .environment-care .effort-container .effort p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .environment-care .effort-container .effort p {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .about-us .col-container .content {
     gap: 1rem;
@@ -990,6 +1134,15 @@ body {
   }
   .about-meal-container .meal-detail .meal-details .gradient-measure div {
     width: 40%;
+  }
+  .environment-care .intro img {
+    width: 60%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .environment-care .intro section {
+    padding-right: 7.5%;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -1149,6 +1302,40 @@ body {
   .information-section .information-container .information .about-information p {
     margin-bottom: 2rem;
   }
+  .services-section .service-container {
+    gap: 2.5rem 2rem;
+  }
+  .services-section .service-container .service {
+    padding: 1rem 0.8rem 0;
+    width: 300px;
+    max-width: 90%;
+  }
+  .services-section .service-container .service img {
+    height: 40px;
+  }
+  .services-section .service-container .service h3 {
+    font-size: 1.3rem;
+  }
+  .environment-care .intro {
+    flex-direction: column;
+  }
+  .environment-care .intro img {
+    width: 100%;
+    height: 350px;
+  }
+  .environment-care .intro section {
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .environment-care .intro section .section-title {
+    align-items: center;
+  }
+  .environment-care .intro section .section-title h2 {
+    width: 55%;
+  }
+  .environment-care .intro section p {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 800px) {
   .hero-section .hero-content {
@@ -1302,5 +1489,52 @@ body {
 @media screen and (max-width: 600px) and (max-width: 400px) {
   .information-section .information-container .information .about-information .tag-lines .tag {
     font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services-section .service-container .service {
+    height: auto;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  .services-section .service-container .service h3 {
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  .environment-care .intro {
+    margin: 0;
+  }
+  .environment-care .intro img {
+    height: 250px;
+  }
+  .environment-care .intro section .section-title h2 {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .environment-care .intro section .section-title h3 {
+    font-size: 1.3rem;
+  }
+  .environment-care .intro section p {
+    width: 100%;
+  }
+  .environment-care .effort-container .effort {
+    margin-bottom: 1rem;
+  }
+  .environment-care .effort-container .effort .icon img {
+    height: 40px;
+    width: 40px;
+  }
+  .environment-care .effort-container .effort .underline {
+    gap: 4px;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 400px) {
+  .environment-care .effort-container .effort .underline span {
+    height: 13px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .environment-care .effort-container .effort p {
+    width: 90%;
   }
 }/*# sourceMappingURL=styles.css.map */

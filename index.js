@@ -345,6 +345,12 @@ informationContent.map(info => {
 
 
 
+// Mendapatkan lebar layar saat ini
+var lebarLayar = window.innerWidth;
+
+// Menampilkan lebar layar di konsol
+console.log("Lebar layar saat ini adalah: " + lebarLayar + " piksel");
+console.log('sd');
 
 
    
