@@ -316,16 +316,14 @@ const informationContent = [
   },
 ]
 
-const informationContainer = document.querySelector('.information-container');
-
 informationContent.map(info => { 
-  const createInformation = document.createElement('div');
-  createInformation.classList.add('information');
+  const createInformation =  $('<div></div>');
+  createInformation.addClass('information');
 
   const tagLines = info.tagLines.map(info => `<div class="tag">${info}</div>`).join(' ');
  
       
-  createInformation.innerHTML = `
+  const dataInformation = `
   <div class="image">
     <img src="${info.image}" alt="${info.alt}">
   </div>
@@ -340,25 +338,72 @@ informationContent.map(info => {
   </section> 
   `
 
-  informationContainer.appendChild(createInformation)
+  createInformation.html(dataInformation)
+  $('.information-container').append(createInformation)
 })
 
+// swiper slide
+$(window).ready(function() { 
+new Swiper('.mySwiper', { 
+  slidesPerView: 3,
+  centeredSlides: true,  
+  navigation: {
+    nextEl: '.swiper-button-next', 
+    prevEl: '.swiper-button-prev', 
+  },
+});
+});
 
 
-// Mendapatkan lebar layar saat ini
-var lebarLayar = window.innerWidth;
+//  testimoni
+const dataTestimonials = [
+  {
+    image:'./images/profile-1.png',
+    words:'The information provided here is very complete. Starting from easy-to-practice recipes to articles about the latest food trends, I found lots of creative ideas for creating delicious and unique dishes from here'
+  },
+  {
+    image:'./images/profile-2.png',
+    words:'Amazing service! The food provided is so fresh and delicious. I am very happy with the variety of menus on offer. This restaurant really pays attention to detail in the taste and presentation of the food.'
+  },
+  {
+    image:'./images/profile-3.png',
+    words:'I was very impressed with the variety of information provided on this site. provides very useful information for all levels of cooking experience.'
+  },
+  {
+    image:'./images/profile-4.png',
+    words:'I was very impressed with the variety of information provided on this site. provides very useful information for all levels of cooking experience.'
+  },
+  {
+    image:'./images/profile-5.png',
+    words:'I was very impressed with the variety of information provided on this site. provides very useful information for all levels of cooking experience.'
+  },
+  {
+    image:'./images/profile-6.png',
+    words:'I was very impressed with the variety of information provided on this site. provides very useful information for all levels of cooking experience.'
+  },
+  {
+    image:'./images/profile-7.png',
+    words:'I was very impressed with the variety of information provided on this site. provides very useful information for all levels of cooking experience.'
+  },
+]
+ 
+dataTestimonials.map(data => { 
+  const createTestimoni =  $('<div class="swiper-slide"></div>'); 
 
-// Menampilkan lebar layar di konsol
-console.log("Lebar layar saat ini adalah: " + lebarLayar + " piksel");
-console.log('sd');
+  const testimoniContent = `
+  <div class='testimoni'>
+      <div class="photo-user" >
+        <img src="${data.image}" alt="user profile">
+      </div>
 
+      <div class="words">
+        <img src="/icon/quate-icon.svg" class="icon" alt="quote">
+        <p>${data.words}</p>
+      </div>
+  </div>
+  `
 
-   
-
-
-  
-  
-  
-  
-  
+  createTestimoni.html(testimoniContent);
+  $('.swiper-wrapper').append(createTestimoni);
+})
   

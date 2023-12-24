@@ -112,7 +112,7 @@ body{
         margin-bottom: 3.5rem;
     }
 
-    @media screen and (max-width:400px) {
+    @media screen and (max-width:450px) {
         font-size: 2rem;
     }
 }
@@ -1005,7 +1005,6 @@ body{
     }
 }
 
-
 // environment 
 .environment-care{
     @include default-container();
@@ -1118,6 +1117,145 @@ body{
     }
 }
 
+
+// testimonials
+.testimonials{
+    @include default-container(); 
+    max-width: 100%;
+    overflow: hidden;
+
+    .testimonials-container{
+        @include default-container(); 
+        height: 551px; 
+
+        .background{ 
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%; 
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        // slide testimoni
+        .swiper-container {
+            width: 100%;
+            color: white;
+            height: 100%;
+            max-width: 100%
+          }
+
+          .swiper-slide{ 
+
+            @include flex();
+            transition: all .3s ease-in-out;
+            opacity: 0;
+            position: relative;
+            width: auto; 
+            &.swiper-slide-active{
+                justify-content: center;
+                max-width: 30%;
+                opacity: 1; 
+            }
+
+            &.swiper-slide-prev{ 
+                justify-content: end; 
+                min-width: 35%;
+                opacity: 1; 
+            }
+
+            &.swiper-slide-next{ 
+                justify-content: start; 
+                min-width: 35%;
+                opacity: 1; 
+            }
+
+            .testimoni{
+                @include flex-direction-col(); 
+                width: 380px;
+                max-width: 100%;
+                height: 230px;
+                background-color: #1B1B1B;
+                border-radius: 10px; 
+                box-shadow: 0px 4px 30px 0px rgba(141, 141, 141, 0.25);
+  
+                padding: 0 1rem;
+                
+                .photo-user{
+                   @include flex-center();
+                   height: 101px;
+                   width: 101px;
+                   position: absolute;
+                   background-color: $primary-color;
+                   border-radius: 50%;
+                   overflow: hidden;
+ 
+                   transform: translateY(-50%);
+ 
+                   img{
+                     height: 95px;
+                     width: 95px;
+                     object-fit: cover;
+                     border-radius: 50%;
+                   }
+                }
+ 
+                .words{
+                   @include flex-direction-col();
+                   position: relative;
+ 
+                   margin-top: 3.25rem;
+                   height: 100%; 
+ 
+                   .icon{
+                     width: 32px;
+                     height: auto;
+                     object-fit: contain;
+                   }
+ 
+                   p{
+                     @include common-text-style();
+                     font-size: 1.125rem;
+                     text-align: center;
+                     color: #ECECEC;
+                   }
+                }
+ 
+             }
+
+          } 
+    }
+}
+
+//  testimoni slide button
+.swiper-button-next:after, 
+.swiper-button-prev:after{
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   
+   position: absolute; 
+   background-image: url(/icon/prev-button.svg);
+ }
+
+ .swiper-button-prev{
+   left: 1.688rem !important;
+ }
+
+ .swiper-button-next{
+    right: 1.688rem !important;
+    background-image: url(/icon/next-button.svg);
+ }
 
 // responsive
 @media screen and (max-width:1300px){
