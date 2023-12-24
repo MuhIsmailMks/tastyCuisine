@@ -1,5 +1,4 @@
- 
-const menuBtn = $('.menu-button')
+ const menuBtn = $('.menu-button')
 const navbar = $('.navbar')
 const heroImage = $('.hero-image img')
 
@@ -133,13 +132,6 @@ function getMealsList() {
       console.error('Error fetching meals list:', error);
     }
   });
-
-  // displaying next meal 
-    function displayMeal(){
-      // const nilaiawal = 
-    }
-
-
 }
 
 // top screen 
@@ -344,14 +336,29 @@ informationContent.map(info => {
 
 // swiper slide
 $(window).ready(function() { 
-new Swiper('.mySwiper', { 
-  slidesPerView: 3,
-  centeredSlides: true,  
-  navigation: {
-    nextEl: '.swiper-button-next', 
-    prevEl: '.swiper-button-prev', 
-  },
-});
+    new Swiper('.mySwiper', { 
+      // slidesPerView: 3,
+      // centeredSlides: true,  
+      navigation: {
+        nextEl: '.swiper-button-next', 
+        prevEl: '.swiper-button-prev', 
+      },
+      breakpoints: { 
+        10: {
+          slidesPerView: 1, 
+        }, 
+        600: {
+          slidesPerView: 2, 
+          centeredSlides: false,  
+          spaceBetween: 20,
+        }, 
+        1100: {
+          slidesPerView: 3, 
+          centeredSlides: true,  
+        },
+        // Dan seterusnya...
+      },
+    });
 });
 
 

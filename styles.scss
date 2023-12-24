@@ -1257,6 +1257,8 @@ body{
     background-image: url(/icon/next-button.svg);
  }
 
+
+
 // responsive
 @media screen and (max-width:1300px){
     // about us
@@ -1321,6 +1323,29 @@ body{
 
         section{
             padding-right: 7.5%;
+        }
+    }
+
+
+    // testimonials
+    .testimonials .testimonials-container{
+        height: 450px;
+        .swiper-slide .testimoni{
+            width: 90%;
+
+            .photo-user{
+                width: 90px;
+                height: 90px;
+
+                img{
+                    width: 95%;
+                    height: 95%;
+                }
+            }
+
+        }
+        .swiper-slide.swiper-slide-active{
+        max-width: 40%;   
         }
     }
 }
@@ -1432,7 +1457,8 @@ body{
         gap: 2rem;
         }
     }
-      // about meal
+
+     // about meal
       .about-meal-container .meal-detail {
         display: block;
         overflow-y: auto;
@@ -1499,7 +1525,6 @@ body{
         }
     }
 
-
     // information
     .information-section .information-container .information{ 
         flex-direction: column;
@@ -1529,7 +1554,6 @@ body{
         }
     }
 
-
     // services
     .services-section .service-container{
         gap: 2.5rem 2rem; 
@@ -1548,7 +1572,7 @@ body{
         }
     }
 
-      // environment
+    // environment
       .environment-care .intro{
         flex-direction: column;
         img{
@@ -1573,6 +1597,32 @@ body{
             }
         }
     }
+
+    // testimonials
+    .testimonials .testimonials-container{
+
+        .swiper-slide{
+            .testimoni{
+                width: 80%;
+                height: 250px;
+
+                .photo-user{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+
+        .swiper-slide.swiper-slide-active{
+            min-width: 50%;
+            justify-content: end;
+        }
+
+        .swiper-slide.swiper-slide-next{
+            min-width: 50%;
+        }
+    }
+
 }
   
 @media screen and (max-width:800px){
@@ -1818,7 +1868,6 @@ body{
             margin-bottom: .5rem;
         }
     }
- 
     
     // environment 
     .environment-care{
@@ -1871,6 +1920,35 @@ body{
                 width: 90%;
             }
         }
+    }
+
+
+    // testimonials
+    .testimonials .testimonials-container {
+        height: 390px;
+        .swiper-slide .testimoni{
+            width: 80%;
+            max-width: 350px;
+            height: 220px;
+
+            .photo-user{
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        .swiper-slide.swiper-slide-prev,
+        .swiper-slide.swiper-slide-next,
+        .swiper-slide.swiper-slide-active{
+            min-width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        width: 23px !important;
+        height: auto; 
     }
 }
 
