@@ -361,6 +361,11 @@ body {
   font-weight: 600;
   font-size: 2.5rem;
 }
+@media screen and (max-width: 1000px) {
+  .about-us .col-container .content h3 {
+    font-size: 1.65rem;
+  }
+}
 .about-us .col-container .content p {
   font-family: "Molengo", sans-serif;
   font-weight: 400;
@@ -757,6 +762,11 @@ body {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
+@media screen and (max-width: 1000px) {
+  .about-meal-container .meal-detail .meal-details h2 {
+    font-size: 1.65rem;
+  }
+}
 .about-meal-container .meal-detail .meal-details h4 {
   font-family: "Merriweather", serif;
   font-size: 1.8rem;
@@ -1017,6 +1027,12 @@ body {
   color: white;
   line-height: 0.8;
 }
+@media screen and (max-width: 1000px) {
+  .environment-care .intro section .section-title h2,
+  .environment-care .intro section .section-title h3 {
+    font-size: 1.65rem;
+  }
+}
 .environment-care .intro section .section-title h2 {
   font-size: 2rem;
   letter-spacing: 0.92px;
@@ -1222,11 +1238,6 @@ body {
   }
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  display: none;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
   background-position: center;
@@ -1234,6 +1245,10 @@ body {
   background-size: contain;
   position: absolute;
   background-image: url(/icon/prev-button.svg);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }
 
 .swiper-button-prev {
@@ -1245,6 +1260,172 @@ body {
   background-image: url(/icon/next-button.svg);
 }
 
+.contact-us {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding-bottom: 10rem;
+  max-width: 100%;
+}
+.contact-us .contact-content {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 6.25rem;
+}
+.contact-us .contact-content h2 {
+  font-family: "Mirza", serif;
+  color: #F35500;
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-size: 1.563rem;
+  color: white;
+  margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 1000px) {
+  .contact-us .contact-content h2 {
+    font-size: 1.65rem;
+  }
+}
+.contact-us .contact-content .form-question-container {
+  width: 450px;
+  position: relative;
+  max-width: 100%;
+}
+.contact-us .contact-content .form-question-container h2 {
+  text-align: right;
+}
+.contact-us .contact-content .form-question-container div {
+  margin-bottom: 1.938rem;
+}
+.contact-us .contact-content .form-question-container div h3 {
+  font-family: "Mirza", serif;
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+.contact-us .contact-content .form-question-container div textarea {
+  height: 164px;
+  resize: none;
+}
+.contact-us .contact-content .form-question-container div input {
+  height: 40px;
+}
+.contact-us .contact-content .form-question-container div textarea,
+.contact-us .contact-content .form-question-container div input {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(116, 116, 116, 0.7);
+  background: #1B1A1A;
+  outline: none;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 1100px) {
+  .contact-us .contact-content .form-question-container div textarea,
+  .contact-us .contact-content .form-question-container div input {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-us .contact-content .form-question-container div textarea,
+  .contact-us .contact-content .form-question-container div input {
+    font-size: 1rem;
+  }
+}
+.contact-us .contact-content .form-question-container div textarea:focus,
+.contact-us .contact-content .form-question-container div input:focus {
+  border: 1px solid #F35500;
+}
+.contact-us .contact-content .form-question-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mirza", serif;
+  color: #F35500;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  gap: 11px;
+  font-size: 1.45rem;
+  border-radius: 15px;
+  background: #1B1A1A;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 1000px) {
+  .contact-us .contact-content .form-question-container button {
+    font-size: 1.65rem;
+  }
+}
+.contact-us .contact-content .form-question-container button span {
+  height: 100%;
+}
+.contact-us .contact-content .form-question-container button img {
+  width: 20px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact-us .contact-content .contact-information {
+  position: relative;
+  width: 410px;
+  max-width: 100%;
+}
+.contact-us .contact-content .contact-information h3 {
+  font-family: "Mirza", serif;
+  color: #F35500;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+.contact-us .contact-content .contact-information .contact {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.contact-us .contact-content .contact-information .contact div {
+  margin-bottom: 1.25rem;
+}
+.contact-us .contact-content .contact-information .contact div p {
+  font-family: "Sniglet", serif;
+  color: #E6E6E6;
+  font-size: 1.125rem;
+}
+.contact-us .contact-content .contact-information .description {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.contact-us .contact-content .contact-information .description p {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 1100px) {
+  .contact-us .contact-content .contact-information .description p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-us .contact-content .contact-information .description p {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 1300px) {
   .about-us .col-container .content {
     gap: 1rem;
@@ -1511,6 +1692,33 @@ body {
   .testimonials .testimonials-container .swiper-slide.swiper-slide-next {
     min-width: 50%;
   }
+  .contact-us .contact-content {
+    gap: 2rem;
+  }
+  .contact-us .contact-content .form-question-container {
+    min-width: 360px;
+    width: 40%;
+  }
+  .contact-us .contact-content .form-question-container div input {
+    height: 35px;
+    font-size: 0.98rem;
+  }
+  .contact-us .contact-content .form-question-container div h3 {
+    font-size: 1.1rem;
+  }
+  .contact-us .contact-content .form-question-container h2,
+  .contact-us .contact-content .contact-information h2 {
+    font-size: 1.4rem;
+  }
+  .contact-us .contact-content .contact-information {
+    width: 350px;
+  }
+  .contact-us .contact-content .contact-information h3 {
+    font-size: 1.2rem;
+  }
+  .contact-us .contact-content .contact-information .contact div p {
+    font-size: 1.04rem;
+  }
 }
 @media screen and (max-width: 800px) {
   .hero-section .hero-content {
@@ -1548,6 +1756,28 @@ body {
   }
   .about-meal-container .meal-detail .image-source .source section h2,
   .about-meal-container .meal-detail .image-source .source section span {
+    font-size: 1rem;
+  }
+  .contact-us .contact-content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  .contact-us .contact-content .form-question-container,
+  .contact-us .contact-content .contact-information {
+    width: 70%;
+    min-width: 50%;
+    text-align: center;
+  }
+  .contact-us .contact-content .form-question-container h2,
+  .contact-us .contact-content .contact-information h2 {
+    text-align: center;
+  }
+  .contact-us .contact-content .form-question-container .contact div p,
+  .contact-us .contact-content .form-question-container .description p,
+  .contact-us .contact-content .contact-information .contact div p,
+  .contact-us .contact-content .contact-information .description p {
     font-size: 1rem;
   }
 }
@@ -1734,5 +1964,35 @@ body {
   .swiper-button-prev {
     width: 23px !important;
     height: auto;
+  }
+  .swiper-button-prev {
+    left: 1rem !important;
+  }
+  .swiper-button-next {
+    right: 1rem !important;
+  }
+  .contact-us .contact-content .form-question-container,
+  .contact-us .contact-content .contact-information {
+    width: 80%;
+    min-width: 90%;
+    text-align: center;
+  }
+  .contact-us .contact-content .form-question-container div input,
+  .contact-us .contact-content .contact-information div input {
+    height: 30px;
+  }
+  .contact-us .contact-content .form-question-container div textarea,
+  .contact-us .contact-content .contact-information div textarea {
+    height: 150px;
+  }
+  .contact-us .contact-content .form-question-container h2,
+  .contact-us .contact-content .contact-information h2 {
+    text-align: center;
+  }
+  .contact-us .contact-content .form-question-container .contact div p,
+  .contact-us .contact-content .form-question-container .description p,
+  .contact-us .contact-content .contact-information .contact div p,
+  .contact-us .contact-content .contact-information .description p {
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=styles.css.map */
