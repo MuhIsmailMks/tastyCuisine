@@ -12,6 +12,15 @@ body {
   overflow-x: hidden;
   background-color: #141414;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(26, 26, 26);
+}
+body::-webkit-scrollbar-thumb {
+  background: #F35500;
+}
 
 .title {
   display: flex;
@@ -1264,7 +1273,7 @@ body {
   position: relative;
   height: auto;
   width: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   max-width: 100%;
 }
 .contact-us .contact-content {
@@ -1426,6 +1435,115 @@ body {
     font-size: 1rem;
   }
 }
+
+footer {
+  position: relative;
+  height: auto;
+  width: 100%;
+  height: 344px;
+  flex-shrink: 0;
+  border-top: 3px solid rgba(255, 89, 0, 0.72);
+  background: #0B0B0B;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.75rem 0;
+}
+footer .logo img {
+  height: 45px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: auto;
+  width: 100%;
+  gap: 3.75rem;
+}
+footer .footer-content .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  position: relative;
+}
+footer .footer-content .links ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+footer .footer-content .links ul li {
+  width: 210px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+}
+footer .footer-content .links ul li a {
+  font-family: "Sniglet", serif;
+  color: #E6E6E6;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+footer .footer-content .line-footer {
+  background-color: #F35500;
+  width: 2px;
+  height: 194px;
+  position: relative;
+}
+footer .footer-content .from-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.563rem;
+  position: relative;
+  height: auto;
+  width: 410px;
+}
+footer .footer-content .from-us .social-media {
+  display: flex;
+  align-items: center;
+  gap: 1.563rem;
+}
+footer .footer-content .from-us .social-media img {
+  height: 38px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .footer-content .from-us .by,
+footer .footer-content .from-us .expression {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  font-size: 1.125rem;
+  color: #B3B3B3;
+}
+@media screen and (max-width: 1100px) {
+  footer .footer-content .from-us .by,
+  footer .footer-content .from-us .expression {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer .footer-content .from-us .by,
+  footer .footer-content .from-us .expression {
+    font-size: 1rem;
+  }
+}
+footer .footer-content .from-us .by {
+  color: #E6E6E6;
+}
+
 @media screen and (max-width: 1300px) {
   .about-us .col-container .content {
     gap: 1rem;
@@ -1719,6 +1837,27 @@ body {
   .contact-us .contact-content .contact-information .contact div p {
     font-size: 1.04rem;
   }
+  footer {
+    height: auto;
+    padding-bottom: 2rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  footer .footer-content {
+    gap: 3rem;
+  }
+  footer .footer-content .links ul li {
+    width: 170px;
+  }
+  footer .footer-content .links ul li a {
+    font-size: 1rem;
+  }
+  footer .footer-content .from-us {
+    width: 35%;
+  }
+  footer .footer-content .from-us .social-media img {
+    height: 30px;
+  }
 }
 @media screen and (max-width: 800px) {
   .hero-section .hero-content {
@@ -1779,6 +1918,23 @@ body {
   .contact-us .contact-content .contact-information .contact div p,
   .contact-us .contact-content .contact-information .description p {
     font-size: 1rem;
+  }
+  footer .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  footer .footer-content .links {
+    justify-content: space-between;
+    width: 60%;
+  }
+  footer .footer-content .line-footer {
+    width: 80%;
+    height: 2px;
+  }
+  footer .footer-content .from-us {
+    width: 80%;
+    align-items: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1975,7 +2131,6 @@ body {
   .contact-us .contact-content .contact-information {
     width: 80%;
     min-width: 90%;
-    text-align: center;
   }
   .contact-us .contact-content .form-question-container div input,
   .contact-us .contact-content .contact-information div input {
@@ -1984,6 +2139,14 @@ body {
   .contact-us .contact-content .form-question-container div textarea,
   .contact-us .contact-content .contact-information div textarea {
     height: 150px;
+  }
+  .contact-us .contact-content .form-question-container button,
+  .contact-us .contact-content .contact-information button {
+    font-size: 1.2rem;
+  }
+  .contact-us .contact-content .form-question-container button span,
+  .contact-us .contact-content .contact-information button span {
+    padding-top: 0.2rem;
   }
   .contact-us .contact-content .form-question-container h2,
   .contact-us .contact-content .contact-information h2 {
@@ -1994,5 +2157,41 @@ body {
   .contact-us .contact-content .contact-information .contact div p,
   .contact-us .contact-content .contact-information .description p {
     font-size: 0.9rem;
+  }
+  footer .logo img {
+    height: 35px;
+  }
+  footer .footer-content {
+    padding: 0 1.5rem;
+  }
+  footer .footer-content .links,
+  footer .footer-content .from-us {
+    width: 100%;
+  }
+  footer .footer-content .links ul {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 420px) {
+  footer .footer-content .links ul li a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .footer-content .from-us {
+    gap: 1rem;
+  }
+  footer .footer-content .from-us .social-media img {
+    height: 25px;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 420px) {
+  footer .footer-content .from-us .expression {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .footer-content .from-us .by {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=styles.css.map */
