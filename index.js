@@ -274,7 +274,7 @@ aboutMealContainer.click((e) => {
 
 const informationContent = [
   {
-    image:'/images/information-image.png',
+    image:'./images/information-image.png',
     alt:'organic meal',
     tagLines:[
       'Education',
@@ -285,7 +285,7 @@ const informationContent = [
     aboutInformation:`follow food trends, culinary events, or ways to make the dining experience more interesting such as food pairing, dish decoration, and so on, It is important to realize that nutrition is not just about 'diet', it is the foundation of our health. In this article, we will discuss why nutrition is a key factor in maintaining balance in our body and mind.`,
   },
   {
-    image:'/images/image-information2.webp',
+    image:'./images/image-information2.webp',
     alt:'cooking meal',
     tagLines:[
       'Tips',
@@ -296,7 +296,7 @@ const informationContent = [
     aboutInformation:`We not only provide information about delicious dishes, but also serve authentic recipes from various cultures. Discover how to make your favorite dishes at home with easy-to-understand step-by-step instructions, allowing you to experience signature flavors without leaving your kitchen.`,
   },
   {
-    image:'/images/image-information3.webp',
+    image:'./images/image-information3.webp',
     alt:'restaurant',
     tagLines:[
       'Restaurant',
