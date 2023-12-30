@@ -1,7 +1,6 @@
- const menuBtn = $('.menu-button')
+const menuBtn = $('.menu-button')
 const navbar = $('.navbar')
 const heroImage = $('.hero-image img')
-
 
 // menu navigation mobile
 menuBtn.click(function (){
@@ -159,8 +158,7 @@ searchMealButton.click(() => {
 });
 
 const inputSearch = $('.search-meal input')
-inputSearch.keypress((event) => {
-  console.log(event);
+inputSearch.keypress((event) => { 
   if (event.key === 'Enter' || event.keyCode === 13) {
       getMealsList();
   }
@@ -171,8 +169,7 @@ mealList.click(getMealsRecipe)
 function getMealsRecipe(e) {
   e.preventDefault();
   if ($(e.target).hasClass('get-recipe')) {
-    let mealItem = $(e.target).closest('.meal');
-  console.log(mealItem.data('id'));
+    let mealItem = $(e.target).closest('.meal'); 
     $.ajax({ 
       url: `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.data('id')}`,
       method: 'GET',
@@ -201,8 +198,7 @@ function mealRecipeModal(meal){
           gradient += `<li>${ingradient}</li>`
           measures += `<li>${measure}</li>`
         }  
-      }  
-      console.log(measures);
+      }   
     const details = $(` 
                <div class="close-btn">
                     <img src="./icon/close-about-meal.svg" alt="">
