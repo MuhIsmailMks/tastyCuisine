@@ -205,7 +205,7 @@ function mealRecipeModal(meal){
       console.log(measures);
     const details = $(` 
                <div class="close-btn">
-                    <img src="/icon/close-about-meal.svg" alt="">
+                    <img src="./icon/close-about-meal.svg" alt="">
                 </div>
 
 
@@ -366,6 +366,7 @@ $(window).ready(function() {
 const dataTestimonials = [
   {
     image:'./images/profile-1.png',
+    // image:'./images/profile-1.png',
     words:'The information provided here is very complete. Starting from easy-to-practice recipes to articles about the latest food trends, I found lots of creative ideas for creating delicious and unique dishes from here'
   },
   {
@@ -404,7 +405,7 @@ dataTestimonials.map(data => {
       </div>
 
       <div class="words">
-        <img src="/icon/quate-icon.svg" class="icon" alt="quote">
+        <img src="./icon/quate-icon.svg" class="icon" alt="quote">
         <p>${data.words}</p>
       </div>
   </div>
