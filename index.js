@@ -9,7 +9,7 @@ menuBtn.click(function (){
 
 
 // responsive element
- let screenWidth = $(window).width(); 
+let screenWidth = $(window).width(); 
  
 $(document).ready(function() { 
     function displayScreenWidth() {
