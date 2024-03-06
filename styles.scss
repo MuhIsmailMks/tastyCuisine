@@ -202,8 +202,7 @@ body{
 }
 
 .title{ 
-    @include flex();
-    // display: none;
+    @include flex(); 
     gap: 1rem;
     justify-content: center;
     align-items: center;
@@ -674,8 +673,7 @@ body{
                     text-align: center;
                 }
 
-                button{
-                    // background-color: #8A2D00;
+                button{ 
                     background-color: $primary-color;
                     padding: .25rem 1.3rem;
                     border: none;
@@ -1043,8 +1041,7 @@ body{
 
         section{
             @include flex-direction-col();
-            @include default-container();
-            // width: 395px;
+            @include default-container(); 
             max-width: 100%; 
             padding-right: 7.5rem;
 
