@@ -7,7 +7,6 @@ menuBtn.click(function (){
     navbar.toggleClass('active')
 })
 
-
 // responsive element
 let screenWidth = $(window).width(); 
  
@@ -22,7 +21,6 @@ $(document).ready(function() {
       // responsive hero image 
      function responsiveHeroImage(){
         heroImage.prop('src', screenWidth >= 600 ? './images/hero-image.webp' : './images/hero-image-mobile.png');
- 
     }
 
     responsiveHeroImage()
