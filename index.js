@@ -198,10 +198,10 @@ function mealRecipeModal(meal){
         }  
       }   
     const details = $(` 
+
                <div class="close-btn">
                     <img src="./icon/close-about-meal.svg" alt="">
                 </div>
-
 
             <div class="image-source">
             <img src="${meal.strMealThumb}" alt="">
@@ -261,11 +261,7 @@ aboutMealContainer.click((e) => {
   }
 });
 
-
-
-
 // information content
-
 const informationContent = [
   {
     image:'./images/information-image.png',
