@@ -38,8 +38,6 @@ body{
   &::-webkit-scrollbar-thumb {
     background: $primary-color;  
   }
-  
-
 }
 
 
@@ -272,6 +270,9 @@ body{
 // styling 
 .container{
     @include default-container(); 
+    max-width: 100%;
+    box-sizing: border-box;
+      
 }
 
 
