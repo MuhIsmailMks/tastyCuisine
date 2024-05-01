@@ -272,7 +272,7 @@ body{
     @include default-container(); 
     max-width: 100%;
     box-sizing: border-box;
-      
+    overflow: hidden;
 }
 
 
@@ -405,6 +405,8 @@ body{
             @include heading-section-text(); 
             width: 493px;
             max-width: 100%;
+            z-index: 9;
+            position: relative;
             span{
                 color: $primary-color;
             }
