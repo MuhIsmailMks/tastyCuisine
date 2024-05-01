@@ -87,14 +87,14 @@ function getMealsList() {
       if (data.meals) {
         const mealsSlice = data.meals.slice(0, displayedMeals);
 
-        mealsSlice.forEach(function (meal) {
+        mealsSlice.forEach(function (meal,i) {
           getMeals(meal.idMeal, function (mealDetails, error) {
             if (error) {
               console.error('Error fetching meal details:', error);
               return;
             } 
             const mealElement = $(`
-              <div class="meal" data-id="${meal.idMeal}">
+              <div class="meal" data-id="${meal.idMeal}" data-aos="zoom-in" data-aos-delay="${i}00">
                 <div class="image">
                   <img src="${mealDetails.mealThumb}" alt="${mealDetails.name}">
                 </div>
@@ -197,8 +197,8 @@ function mealRecipeModal(meal){
           measures += `<li>${measure}</li>`
         }  
       }   
-    const details = $(` 
 
+    const details = $(`  
                <div class="close-btn">
                     <img src="./icon/close-about-meal.svg" alt="">
                 </div>
