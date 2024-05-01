@@ -399,7 +399,10 @@ body{
 
         height: 100%;
         width: 100%;
-        position: relative; 
+        max-width: 1500px;
+        position: relative;
+        
+        margin: 0 auto;
 
         h1{
             @include heading-section-text(); 
