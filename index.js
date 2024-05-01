@@ -402,3 +402,6 @@ dataTestimonials.map(data => {
   $('.swiper-wrapper').append(createTestimoni);
 })
   
+
+// aos animation init
+AOS.init();
