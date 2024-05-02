@@ -302,7 +302,8 @@ informationContent.map(info => {
   const createInformation =  $('<div></div>');
   createInformation.addClass('information');
 
-  const tagLines = info.tagLines.map(info => `<div class="tag">${info}</div>`).join(' ');
+  const tagLines = info.tagLines.map(info => `<div class="tag" data-aos="zoom-in" data-aos-duration="500"
+  data-aos-delay="300">${info}</div>`).join(' ');
  
       
   const dataInformation = `
@@ -404,4 +405,7 @@ dataTestimonials.map(data => {
   
 
 // aos animation init
-AOS.init();
+AOS.init({
+  // once: false,
+  mirror: false, 
+});
