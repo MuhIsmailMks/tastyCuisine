@@ -299,7 +299,7 @@ const informationContent = [
 ]
 
 informationContent.map(info => { 
-  const createInformation =  $('<div></div>');
+  const createInformation =  $(`<div ></div>`);
   createInformation.addClass('information');
 
   const tagLines = info.tagLines.map(info => `<div class="tag" data-aos="zoom-in" data-aos-duration="500"
@@ -307,11 +307,13 @@ informationContent.map(info => {
  
       
   const dataInformation = `
-  <div class="image">
+  <div class="image"  data-aos="fade-right" data-aos-duration="500"
+  data-aos-delay="300">
     <img src="${info.image}" alt="${info.alt}">
   </div>
 
-  <section class="about-information">
+  <section class="about-information"  data-aos="fade-left" data-aos-duration="500"
+  data-aos-delay="300">
     <div class="tag-lines">
        ${tagLines}
     </div>
