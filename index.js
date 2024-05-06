@@ -251,7 +251,6 @@ function mealRecipeModal(meal){
       mealDetailsContainer.append(details)
       aboutMealContainer.addClass('show');
 }
-
  
 aboutMealContainer.click((e) => {
   let target = $(e.target);
