@@ -142,9 +142,7 @@ function saveScrollPosition() {
       displayedMeals += 8
       mealContainer.scrollTop(initialScrollPosition);
       getMealsList(); 
- }) 
-
- 
+ });
  
 $(document).ready(function() {
   getMealsList();
