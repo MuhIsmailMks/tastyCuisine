@@ -160,7 +160,7 @@ inputSearch.keypress((event) => {
   }
 }); 
 
-mealList.click(getMealsRecipe)  
+mealList.click(getMealsRecipe);
 
 function getMealsRecipe(e) {
   e.preventDefault();
