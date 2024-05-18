@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   z-index: 999;
 }
 .header-container header nav ul {

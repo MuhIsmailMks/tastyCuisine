@@ -54,17 +54,24 @@ body{
 }
 
 @mixin flex-center{
-    @include flex();
-    justify-content: center;
+    @include flex();   
+     -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @mixin flex-between{
-    @include flex(); 
-    justify-content: space-between;
+    @include flex();   
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+    justify-content: space-between; 
 }
 
 @mixin flex-direction-col{
-    @include flex(); 
+    @include flex();    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -206,8 +213,13 @@ body{
 
 .title{ 
     @include flex(); 
-    gap: 1rem;
+    gap: 1rem;    
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     height: 3.875rem;
@@ -274,9 +286,10 @@ body{
 
 // styling 
 .container{
-    @include default-container(); 
+    @include default-container();    
     max-width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     overflow: hidden;
 }
 
