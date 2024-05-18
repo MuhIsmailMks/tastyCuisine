@@ -908,11 +908,11 @@ body{
         @include default-container();
         @include flex-direction-col();
         gap: 8rem;
-        max-width: 1250px;
+        max-width: 1450px;
     
         .information{
             @include default-container(); 
-            @include flex-center(); 
+            @include flex-center();  
             gap: 2rem;
             align-items: start;
             flex-wrap: wrap;
@@ -1074,7 +1074,6 @@ body{
                 @include flex-direction-col();
                 align-items: start;
                 gap: 0.938rem;
-
 
                 .line{
                     width: 100px;

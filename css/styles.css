@@ -846,7 +846,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: column;
   gap: 8rem;
-  max-width: 1250px;
+  max-width: 1450px;
 }
 .information-section .information-container .information {
   position: relative;

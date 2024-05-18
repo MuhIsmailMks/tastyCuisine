@@ -382,8 +382,12 @@ const dataTestimonials = [
   },
 ]
  
-dataTestimonials.map(data => { 
-  const createTestimoni =  $('<div class="swiper-slide"></div>'); 
+dataTestimonials.map((data,i) => { 
+  let createTestimoni =  $('<div class="swiper-slide"></div>');  
+
+  createTestimoni.attr('data-aos', 'zoom-in')
+  createTestimoni.attr('data-aos-duration', '500')
+  createTestimoni.attr('data-aos-delay', `${i}00`)
 
   const testimoniContent = `
   <div class='testimoni'>
@@ -399,12 +403,7 @@ dataTestimonials.map(data => {
   `
 
   createTestimoni.html(testimoniContent);
-  $('.swiper-wrapper').append(createTestimoni);
+  return $('.swiper-wrapper').append(createTestimoni);
 })
   
 
-// aos animation init
-AOS.init({
-  // once: false,
-  mirror: false, 
-});
