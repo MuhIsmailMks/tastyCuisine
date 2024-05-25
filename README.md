@@ -11,6 +11,6 @@ data-aos="fade-left"
 
 data-aos="fade-right"
 data-aos-duration="400"
-data-aos-delay="200"
+data-aos-delay="900"
 
 data-aos="zoom-in"
