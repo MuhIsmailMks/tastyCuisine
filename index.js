@@ -7,6 +7,10 @@ menuBtn.click(function (){
     navbar.toggleClass('active')
 })
 
+AOS.init({
+  once: true, 
+  });
+
 // responsive element
 let screenWidth = $(window).width(); 
  
