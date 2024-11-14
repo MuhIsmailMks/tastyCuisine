@@ -1520,11 +1520,26 @@ footer .footer-content .from-us .social-media {
   align-items: center;
   gap: 1.563rem;
 }
-footer .footer-content .from-us .social-media img {
+footer .footer-content .from-us .social-media a {
   height: 38px;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+footer .footer-content .from-us .social-media a img {
+  height: 100%;
+}
+footer .footer-content .from-us .social-media a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 footer .footer-content .from-us .by,
 footer .footer-content .from-us .expression {

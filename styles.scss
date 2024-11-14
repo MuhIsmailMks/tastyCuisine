@@ -1506,10 +1506,27 @@ footer{
                 @include flex();
                 gap: 1.563rem;
 
-                img{
+                a{
                     height: 38px;
                     width: auto;
-                    object-fit: contain;
+                    object-fit: contain;  
+
+                    img{
+                        height: 100%;
+                    }
+                    transition: .1s;
+                    -webkit-transition: .1s;
+                    -moz-transition: .1s;
+                    -ms-transition: .1s;
+                    -o-transition: .1s;
+                
+                    &:hover{
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+}
                 }
             }
 
