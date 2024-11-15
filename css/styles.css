@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Mirza:wght@400;500;600&family=Radio+Canada:wght@300;400;500;600&family=Molengo&display=&family=Sniglet&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -212,11 +216,19 @@ body::-webkit-scrollbar-thumb {
   font-size: 1rem;
   padding: 0.2rem 1rem;
   color: white;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
 }
 @media screen and (max-width: 450px) {
   .header-container header nav ul li a {
     font-size: 0.85rem;
   }
+}
+.header-container header nav ul li:hover a {
+  opacity: 0.8;
 }
 .header-container header .accessibility {
   gap: 2.313rem;

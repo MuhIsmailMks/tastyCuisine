@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Mirza:wght@400;500;600&family=Radio+Canada:wght@300;400;500;600&family=Molengo&display=&family=Sniglet&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -361,6 +365,15 @@ body{
                     @include link-text();
                     padding: .2rem 1rem;
                     color: white;
+                    transition: .2s;
+                    -webkit-transition: .2s;
+                    -moz-transition: .2s;
+                    -ms-transition: .2s;
+                    -o-transition: .2s;
+                }
+
+                &:hover a{
+                    opacity: .8;
                 }
             }
         }
@@ -1680,8 +1693,8 @@ footer{
                                 top: 0;
                                 height: 100%;
                                 width: 100%;
-
                             }
+                           
                         }
                     }
                 }
