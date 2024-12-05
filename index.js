@@ -265,7 +265,7 @@ aboutMealContainer.click((e) => {
 // information content
 const informationContent = [
   {
-    image:'./images/information-image.png',
+    image:'./images/image-information1.webp',
     alt:'organic meal',
     tagLines:[
       'Education',
@@ -348,7 +348,7 @@ $(window).ready(function() {
           slidesPerView: 3, 
           centeredSlides: true,  
         },
-        // Dan seterusnya...
+        
       },
     });
 });
