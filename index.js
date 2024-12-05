@@ -19,12 +19,12 @@ $(document).ready(function() {
       let screenWidth = $(window).width();   
       
       // responsive hero image 
-      heroImage.prop('src', screenWidth >= 600 ? './images/hero-imageDekstop.webp' : './images/hero-image-mobile.png');
+      heroImage.prop('src', screenWidth >= 600 ? './images/hero-imageDekstop.webp' : './images/hero-imageMobile.webp');
     }
 
       // responsive hero image 
      function responsiveHeroImage(){
-        heroImage.prop('src', screenWidth >= 600 ? './images/hero-imageDekstop.webp' : './images/hero-image-mobile.png');
+        heroImage.prop('src', screenWidth >= 600 ? './images/hero-imageDekstop.webp' : './images/hero-imageMobile.webp');
     }
 
     responsiveHeroImage()
