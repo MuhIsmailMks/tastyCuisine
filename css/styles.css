@@ -1150,8 +1150,9 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 100%;
+  max-width: 2500px;
   overflow: hidden;
+  margin: 0 auto;
 }
 .testimonials .testimonials-container {
   position: relative;

@@ -83,7 +83,7 @@ function getMealsList() {
     method: 'GET',
     success: function (data) {
       retrievedMealsData = data
-      mealContainer.html(`  <div class="loading-meal"> 
+      mealContainer.html(` <div class="loading-meal"> 
       <div class="loading-effect"><div></div><div></div><div></div><div></div></div>
    </div>   
    `);   

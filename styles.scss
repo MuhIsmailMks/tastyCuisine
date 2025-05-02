@@ -1170,8 +1170,9 @@ body{
 // testimonials
 .testimonials{
     @include default-container(); 
-    max-width: 100%;
+    max-width: 2500px;
     overflow: hidden; 
+    margin: 0 auto;
 
     .testimonials-container{
         @include default-container(); 
