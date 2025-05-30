@@ -142,11 +142,11 @@ function saveScrollPosition() {
 }
 
  // load more button
- loadMoreMeal.on('click',() => {
+loadMoreMeal.on('click',() => {
       displayedMeals += 8
       mealContainer.scrollTop(initialScrollPosition);
       getMealsList(); 
- });
+});
  
 $(document).ready(function() {
   getMealsList();
@@ -323,7 +323,7 @@ informationContent.map(info => {
     <button class="read-more">Read More</button>
   </section> 
   `
-
+  
   createInformation.html(dataInformation)
   $('.information-container').append(createInformation)
 })
