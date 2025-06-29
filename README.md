@@ -1,16 +1,45 @@
-# tasty cuisine
+# 🍽️ TastyCuisine – Recipe Website
 
-See Site : https://muhismailmks.github.io/tastyCuisine/
+A modern, fully responsive recipe website designed from scratch in Figma and developed using semantic HTML, SCSS, and jQuery.  
+This project demonstrates clean front-end practices, interactive elements, and integration with API data for a dynamic user experience.
 
-See Design : https://www.figma.com/file/ldwv7v3CFLsLFkORBRLHN3/Tasty-Cuisine
+---
 
-<!-- aos -->
-data-aos="fade-up"
-data-aos="fade-down"
-data-aos="fade-left"
+## 🖼️ Preview
 
-data-aos="fade-right"
-data-aos-duration="400"
-data-aos-delay="900"
+🔗 **Live Demo:** [TastyCuisine](https://muhismailmks.github.io/tastyCuisine/)  
+🎨 **Figma Design:** [View on Figma](https://shorturl.at/ZyJ0R)
 
-data-aos="zoom-in"
+![TastyCuisine Screenshot](./screenshot.png) <!-- (opsional jika kamu punya screenshot di repo) -->
+
+---
+
+## ✨ Key Features
+
+- 🎨 **Custom Design**: UI/UX designed from scratch using Figma.
+- 📱 **Responsive Layout**: Optimized for mobile, tablet, and desktop devices.
+- 🎞️ **SwiperJS Integration**: Smooth and modern testimonial slider.
+- 🎯 **Clean & Semantic Code**: HTML5 with well-organized structure and naming conventions.
+- 💅 **SCSS Support**: Modular and maintainable CSS architecture with Sass.
+- 🔄 **API Integration**: Dynamic recipe data fetched using jQuery and Ajax.
+- ⚡ **Lightweight & Fast**: Built without heavy frameworks to ensure performance.
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5**
+- **SCSS (Sass)**
+- **jQuery**
+- **SwiperJS**
+- **Figma (Design)**
+
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+1. Clone the repository
+```bash
+git clone https://github.com/muhismailmks/tastyCuisine.git
