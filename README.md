@@ -10,7 +10,6 @@ This project demonstrates clean front-end practices, interactive elements, and i
 🔗 **Live Demo:** [TastyCuisine](https://muhismailmks.github.io/tastyCuisine/)  
 🎨 **Figma Design:** [View on Figma](https://shorturl.at/ZyJ0R)
 
-![TastyCuisine Screenshot](./screenshot.png) <!-- (opsional jika kamu punya screenshot di repo) -->
 
 ---
 
