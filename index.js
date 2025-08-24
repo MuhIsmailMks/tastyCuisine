@@ -346,7 +346,7 @@ $(window).ready(function() {
         }, 
         1100: {
           slidesPerView: 3, 
-          centeredSlides: true,  
+          // centeredSlides: true,  
         },
         
       },

@@ -131,13 +131,21 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.container {
+.container-page {
   position: relative;
   height: auto;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+main {
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .header-container {
@@ -162,7 +170,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 99;
   background-color: #141414;
 }
-.header-container header {
+.header-container .container-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,29 +181,29 @@ body::-webkit-scrollbar-thumb {
   max-width: 1500px;
 }
 @media screen and (max-width: 1100px) {
-  .header-container header {
+  .header-container .container-navbar {
     padding: 0 3rem;
   }
 }
 @media screen and (max-width: 600px) {
-  .header-container header {
+  .header-container .container-navbar {
     padding: 0 1rem;
   }
 }
-.header-container header .logo,
-.header-container header nav,
-.header-container header .navbar,
-.header-container header .accessibility {
+.header-container .container-navbar .logo,
+.header-container .container-navbar nav,
+.header-container .container-navbar .navbar,
+.header-container .container-navbar .accessibility {
   display: flex;
   align-items: center;
   position: relative;
 }
-.header-container header .navbar {
+.header-container .container-navbar .navbar {
   width: 70%;
   z-index: 99;
   justify-content: space-between;
 }
-.header-container header .logo img {
+.header-container .container-navbar .logo img {
   height: 45px;
   position: relative;
   width: auto;
@@ -203,14 +211,14 @@ body::-webkit-scrollbar-thumb {
   object-fit: contain;
   z-index: 999;
 }
-.header-container header nav ul {
+.header-container .container-navbar nav ul {
   display: flex;
   align-items: center;
 }
-.header-container header nav ul li {
+.header-container .container-navbar nav ul li {
   list-style: none;
 }
-.header-container header nav ul li a {
+.header-container .container-navbar nav ul li a {
   font-family: "Sniglet", serif;
   font-weight: 400;
   font-size: 1rem;
@@ -223,27 +231,30 @@ body::-webkit-scrollbar-thumb {
   -o-transition: 0.2s;
 }
 @media screen and (max-width: 450px) {
-  .header-container header nav ul li a {
+  .header-container .container-navbar nav ul li a {
     font-size: 0.85rem;
   }
 }
-.header-container header nav ul li:hover a {
+.header-container .container-navbar nav ul li:hover a {
   opacity: 0.8;
 }
-.header-container header .accessibility {
+.header-container .container-navbar .accessibility {
   gap: 2.313rem;
 }
-.header-container header .accessibility span {
+.header-container .container-navbar .accessibility button {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
-.header-container header .accessibility span img {
+.header-container .container-navbar .accessibility button img {
   height: 25px;
   width: auto;
   position: relative;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.header-container header .menu-button {
+.header-container .container-navbar .menu-button {
   display: none;
   position: relative;
   z-index: 99;
@@ -1182,24 +1193,22 @@ body::-webkit-scrollbar-thumb {
 .testimonials .testimonials-container .swiper-slide {
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: all 0.3s ease-in-out;
   opacity: 0;
   position: relative;
   width: auto;
 }
 .testimonials .testimonials-container .swiper-slide.swiper-slide-active {
-  justify-content: center;
-  max-width: 30%;
+  max-width: 33%;
   opacity: 1;
 }
 .testimonials .testimonials-container .swiper-slide.swiper-slide-prev {
-  justify-content: end;
-  min-width: 35%;
+  min-width: 33%;
   opacity: 1;
 }
 .testimonials .testimonials-container .swiper-slide.swiper-slide-next {
-  justify-content: start;
-  min-width: 35%;
+  min-width: 33%;
   opacity: 1;
 }
 .testimonials .testimonials-container .swiper-slide .testimoni {
@@ -1640,7 +1649,7 @@ footer .footer-content .from-us .by {
   }
 }
 @media screen and (max-width: 1100px) {
-  .header-container header .navbar {
+  .header-container .container-navbar .navbar {
     z-index: 0;
     padding: 2rem 0;
     position: absolute;
@@ -1654,21 +1663,21 @@ footer .footer-content .from-us .by {
     flex-direction: column;
     border-bottom: 1px solid white;
   }
-  .header-container header .navbar nav {
+  .header-container .container-navbar .navbar nav {
     width: 100%;
   }
-  .header-container header .navbar nav ul {
+  .header-container .container-navbar .navbar nav ul {
     width: 100%;
     flex-direction: column;
     gap: 1.5rem;
   }
-  .header-container header .navbar nav ul li {
+  .header-container .container-navbar .navbar nav ul li {
     width: 100%;
     height: 60px;
     max-height: 10vh;
     position: relative;
   }
-  .header-container header .navbar nav ul li a {
+  .header-container .container-navbar .navbar nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1678,20 +1687,20 @@ footer .footer-content .from-us .by {
     height: 100%;
     width: 100%;
   }
-  .header-container header .navbar .accessibility {
+  .header-container .container-navbar .navbar .accessibility {
     gap: 20vw;
   }
-  .header-container header .navbar.active {
+  .header-container .container-navbar .navbar.active {
     transform: translateY(0%);
   }
-  .header-container header .menu-button {
+  .header-container .container-navbar .menu-button {
     display: flex;
     position: relative;
     right: 1rem;
     width: 40px;
     height: 40px;
   }
-  .header-container header .menu-button img {
+  .header-container .container-navbar .menu-button img {
     height: 100%;
     width: 100%;
     -o-object-fit: contain;
@@ -1973,13 +1982,13 @@ footer .footer-content .from-us .by {
   }
 }
 @media screen and (max-width: 600px) {
-  .header-container header .logo img {
+  .header-container .container-navbar .logo img {
     height: 35px;
   }
-  .header-container header .navbar .accessibility img {
+  .header-container .container-navbar .navbar .accessibility img {
     height: 20px;
   }
-  .header-container header .menu-button {
+  .header-container .container-navbar .menu-button {
     width: 30px;
     height: 30px;
   }

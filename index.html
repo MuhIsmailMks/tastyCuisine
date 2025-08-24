@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/styles.css"> 
-    <link rel="icon" type="image/svg" sizes="15x32" href="./icon/web-icon.svg"> 
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="15x32"
+      href="./icon/web-icon.svg"
+    />
 
     <!-- meta SEO -->
-    <meta name="description" content="Get the best cooking tips, delicious recipes, and information about healthy food. Tasty Cuisine brings perfection of taste in every dish.">
-    <meta name="keywords" content="cooking, recipes, healthy food, cuisine, culinary">
-    <meta name="author" content="Muhammad Ismail">
+    <meta
+      name="description"
+      content="Get the best cooking tips, delicious recipes, and information about healthy food. Tasty Cuisine brings perfection of taste in every dish."
+    />
+    <meta
+      name="keywords"
+      content="cooking, recipes, healthy food, cuisine, culinary"
+    />
+    <meta name="author" content="Muhammad Ismail" />
 
     <!-- jquery cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
 
     <!-- AOS animation scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -22,400 +39,546 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
-    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <title>Tasty Cuisine</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container-page">
+      <header class="header-container">
+        <div class="container-navbar">
+          <a href="#home" class="logo">
+            <img src="images/name-web.png" alt="Tasty Cuisine logo" />
+          </a>
 
-    <main class="container">
-         
-        <div class="header-container">
-            <header>
+          <div class="navbar">
+            <nav aria-label="Main navigation">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#recipe">Recipe</a></li>
+                <li><a href="#article">Article</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </nav>
 
-                <div class="logo">
-                    <img src="images/name-web.png" alt="Tasty Cuisine logo">
-                </div>
+            <div class="accessibility">
+              <button aria-label="Search">
+                <img src="./icon/search-icon.svg" alt="search icon" />
+              </button>
+              <button aria-label="Bookmark">
+                <img src="./icon/bookmark-icon.svg" alt="bookmark icon" />
+              </button>
+              <button aria-label="Translate">
+                <img src="./icon/translate-icon.svg" alt="translate icon" />
+              </button>
+            </div>
+          </div>
 
-                <div class="navbar">
-                    <nav aria-label="Main navigation">
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#recipe">Recipe</a></li>
-                            <li><a href="#article">Article</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                        </ul>
-                    </nav>
-    
-                    <div class="accessibility">
-                        <span>
-                            <img src="./icon/search-icon.svg" alt="search icon">
-                        </span>
-                        <span>
-                            <img src="./icon/bookmark-icon.svg" alt="bookmark icon">
-                        </span>
-                        <span>
-                            <img src="./icon/translate-icon.svg" alt="translate icon">
-                        </span>
-                    </div>
-                </div>
-
-                <div class="menu-button">
-                    <img src="./icon/menu-icon.svg" alt="menu icon">
-                </div>
-
-            </header>
+          <div class="menu-button">
+            <img src="./icon/menu-icon.svg" alt="menu icon" />
+          </div>
         </div>
+      </header>
 
+      <main>
         <section id="home" class="hero-section">
-            <div class="hero-image">
-                <img src="./images/hero-imageDekstop.webp" alt="hero image">
-            </div>
-            <div class="hero-content">
-                <h1 data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="200">Perfection of <span>Taste </span> in Every Dish</h1>
-                <p data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="400">Get the best cooking tips, delicious recipes, and information about healthy food, From traditional recipes to the latest innovations, bring satisfaction in every bite, bringing you to experience an extraordinary combination of flavors.</p>
-                <button class="read-more" data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="600">  Read More  </button>
-
-            </div>
+          <div class="hero-image">
+            <img src="./images/hero-imageDekstop.webp" alt="hero image" />
+          </div>
+          <div class="hero-content">
+            <h1
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="200"
+            >
+              Perfection of <span>Taste </span> in Every Dish
+            </h1>
+            <p
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="400"
+            >
+              Get the best cooking tips, delicious recipes, and information
+              about healthy food, From traditional recipes to the latest
+              innovations, bring satisfaction in every bite, bringing you to
+              experience an extraordinary combination of flavors.
+            </p>
+            <button
+              class="read-more"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="600"
+            >
+              Read More
+            </button>
+          </div>
         </section>
 
         <section id="about" class="about-us">
-            <div class="title" data-aos="fade-right" data-aos-duration="900"
-            data-aos-delay="300">
-                <h2>About Us</h2>
+          <div
+            class="title"
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="300"
+          >
+            <h2>About Us</h2>
+          </div>
+          <div class="col-container">
+            <div
+              class="image"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="400"
+            >
+              <img src="./images/about-us-image1.webp" alt="about us image" />
             </div>
-            <div class="col-container">
-                <div class="image" data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="400">
-                    <img src="./images/about-us-image1.webp" alt="about us image">
-                </div>
-                <section class="content" data-aos="fade-up" data-aos-duration="900"
-                data-aos-delay="600">
-                    <h3>Culinary Lifestyle</h3>
-                    <p>follow food trends, culinary events, or ways to make the dining experience more interesting such as food pairing, dish decoration, and so on.</p> 
-                    <div class="line">   </div>
-                    <h5>We Inspire Through Taste</h5>
-                    <button class="read-more">Read More</button>
-                </section>
-                <div class="image" data-aos="fade-left" data-aos-duration="900"
-                data-aos-delay="800">
-                    <img src="./images/about-us-image2.webp" alt="about us image">
-                </div>
+            <section
+              class="content"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="600"
+            >
+              <h3>Culinary Lifestyle</h3>
+              <p>
+                follow food trends, culinary events, or ways to make the dining
+                experience more interesting such as food pairing, dish
+                decoration, and so on.
+              </p>
+              <div class="line"></div>
+              <h5>We Inspire Through Taste</h5>
+              <button class="read-more">Read More</button>
+            </section>
+            <div
+              class="image"
+              data-aos="fade-left"
+              data-aos-duration="900"
+              data-aos-delay="800"
+            >
+              <img src="./images/about-us-image2.webp" alt="about us image" />
             </div>
+          </div>
         </section>
 
         <section id="recipe" class="meals-section">
-            
-            <div class="title" data-aos="fade-right" data-aos-duration="900"
-            data-aos-delay="300">
-                <h2>The Meal</h2>
-            </div>
+          <div
+            class="title"
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="300"
+          >
+            <h2>The Meal</h2>
+          </div>
 
-            <div class="search-meal"  data-aos="fade-left" data-aos-duration="900"
-            data-aos-delay="200">
-                <input type="text" placeholder="Enter In Ingredients">
-                <button class="search-btn" aria-label="search meal buton">
-                    <img src="icon/search-icon.svg" alt="search icon">
-                </button>
-            </div>
-
-            <div class="meal-container" id="meal"> 
-            </div>
-
-            <button class="load-more"  data-aos="zoom-in" data-aos-duration="900"
-            data-aos-delay="200">
-                Load More
+          <div
+            class="search-meal"
+            data-aos="fade-left"
+            data-aos-duration="900"
+            data-aos-delay="200"
+          >
+            <input type="text" placeholder="Enter In Ingredients" />
+            <button class="search-btn" aria-label="search meal buton">
+              <img src="icon/search-icon.svg" alt="search icon" />
             </button>
+          </div>
 
+          <div class="meal-container" id="meal"></div>
+
+          <button
+            class="load-more"
+            data-aos="zoom-in"
+            data-aos-duration="900"
+            data-aos-delay="200"
+          >
+            Load More
+          </button>
         </section>
 
         <section class="about-meal-container">
-
-            <div class="meal-detail"> 
-             
-            </div>
-          
-        </section> 
+          <div class="meal-detail"></div>
+        </section>
 
         <section id="article" class="information-section">
-            <div class="title"  data-aos="fade-right" data-aos-duration="900"
-            data-aos-delay="300">
-                <h2>Information</h2>
-            </div>
+          <div
+            class="title"
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="300"
+          >
+            <h2>Information</h2>
+          </div>
 
-            <div class="information-container">
- 
-            
-            </div>
-            
-
+          <div class="information-container"></div>
         </section>
 
         <section class="services-section">
-            <div class="title"  data-aos="fade-right" data-aos-duration="900"
-            data-aos-delay="300">
-                <h2>Our Services</h2>
+          <div
+            class="title"
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="300"
+          >
+            <h2>Our Services</h2>
+          </div>
+          <div class="service-container">
+            <div
+              class="service"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="300"
+            >
+              <div class="icon">
+                <img src="./icon/consultan-icon.svg" alt="consultan icon" />
+              </div>
+              <div class="about-service">
+                <h3>Personal Diet and Nutrition Consultation</h3>
+                <p>
+                  You can make a consultation appointment with our expert team
+                  online or come directly to our clinic.
+                </p>
+              </div>
             </div>
-            <div class="service-container">
 
-                <div class="service"  data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="300">
-                    <div class="icon"><img src="./icon/consultan-icon.svg" alt="consultan icon"></div>
-                    <div class="about-service">
-                        <h3>Personal Diet and Nutrition Consultation</h3>
-                        <p>You can make a consultation appointment with our expert team online or come directly to our clinic.</p>
-                    </div>
-                </div>
-
-                <div class="service"  data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="500">
-                    <div class="icon"><img src="./icon/orders-icon.svg" alt="orders icon"></div>
-                    <div class="about-service">
-                        <h3>Reservations and Orders</h3>
-                        <p>We provide several ways to make reservations or orders quickly and simply.</p>
-                    </div>
-                </div>
-
-                <div class="service"  data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="700">
-                    <div class="icon"><img src="./icon/supplier-icon.svg" alt="supplier icon"></div>
-                    <div class="about-service">
-                        <h3>Collaboration with the best Suppliers</h3>
-                        <p>We prioritize quality in every dish we serve. We work with trusted and high quality local suppliers.</p>
-                    </div>
-                </div>
-
+            <div
+              class="service"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="500"
+            >
+              <div class="icon">
+                <img src="./icon/orders-icon.svg" alt="orders icon" />
+              </div>
+              <div class="about-service">
+                <h3>Reservations and Orders</h3>
+                <p>
+                  We provide several ways to make reservations or orders quickly
+                  and simply.
+                </p>
+              </div>
             </div>
+
+            <div
+              class="service"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="700"
+            >
+              <div class="icon">
+                <img src="./icon/supplier-icon.svg" alt="supplier icon" />
+              </div>
+              <div class="about-service">
+                <h3>Collaboration with the best Suppliers</h3>
+                <p>
+                  We prioritize quality in every dish we serve. We work with
+                  trusted and high quality local suppliers.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="environment-care">
-
-            <div class="title"  data-aos="fade-right" data-aos-duration="900"
-            data-aos-delay="300">
-                <h2>Environmental care</h2>
-            </div>
-            <div class="intro">
-                <img src="./images/zero-waste.webp" alt="zero waste" data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="500">
-                <section  data-aos="fade-left" data-aos-duration="900"
-                data-aos-delay="500">
-                    <div class="section-title">
-                        <h2>Prioritizing Environmental Balance Through Consumption Habits</h2>
-                        <div class="line"></div>
-                        <h3>Our Vision</h3>
-                    </div>
-                    <p>Here, we care about and prioritize environmental balance in every aspect of the food we serve. We understand that every consumption decision has an impact, therefore, we are committed to providing useful information and practical solutions to support environmental sustainability.</p>
-                </section>
-            </div>
-            <div class="effort-container">
-
-                <div class="effort"  data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="700">
-                    <div class="icon">
-                        <img src="./icon/replace-icon.svg" alt="replace icon">
-                    </div>
-                    <div class="underline">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p class="about-effort">
-                        We advocate for food waste reduction practices by providing creative ideas for utilizing leftover food, reducing waste, and providing insight into the importance of a sustainable waste cycle.
-                    </p>
-                </div>
-
-                <div class="effort"  data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="500">
-                    <div class="icon">
-                        <img src="./icon/eco-icon.svg" alt="eco icon">
-                    </div>
-                    <div class="underline">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p class="about-effort">
-                        Beyond food, we also discuss how everyday habits, such as using built-in containers, reducing plastic use, and general waste management, can have a big impact on the environment.
-                    </p>
-                </div>
-
-                <div class="effort"  data-aos="fade-right" data-aos-duration="900"
-                data-aos-delay="300">
-                    <div class="icon">
-                        <img src="./icon/communi-icon.svg" alt="community icon">
-                    </div>
-                    <div class="underline">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p class="about-effort">
-                        We invite individuals, communities and industry players to join in collaborative efforts to sustain the environment through food. Together, we can achieve significant change.
-                    </p>
-                </div>
-
+          <div
+            class="title"
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="300"
+          >
+            <h2>Environmental care</h2>
+          </div>
+          <div class="intro">
+            <img
+              src="./images/zero-waste.webp"
+              alt="zero waste"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="500"
+            />
+            <section
+              data-aos="fade-left"
+              data-aos-duration="900"
+              data-aos-delay="500"
+            >
+              <div class="section-title">
+                <h2>
+                  Prioritizing Environmental Balance Through Consumption Habits
+                </h2>
+                <div class="line"></div>
+                <h3>Our Vision</h3>
+              </div>
+              <p>
+                Here, we care about and prioritize environmental balance in
+                every aspect of the food we serve. We understand that every
+                consumption decision has an impact, therefore, we are committed
+                to providing useful information and practical solutions to
+                support environmental sustainability.
+              </p>
+            </section>
+          </div>
+          <div class="effort-container">
+            <div
+              class="effort"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="700"
+            >
+              <div class="icon">
+                <img src="./icon/replace-icon.svg" alt="replace icon" />
+              </div>
+              <div class="underline">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p class="about-effort">
+                We advocate for food waste reduction practices by providing
+                creative ideas for utilizing leftover food, reducing waste, and
+                providing insight into the importance of a sustainable waste
+                cycle.
+              </p>
             </div>
 
-        </section> 
+            <div
+              class="effort"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="500"
+            >
+              <div class="icon">
+                <img src="./icon/eco-icon.svg" alt="eco icon" />
+              </div>
+              <div class="underline">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p class="about-effort">
+                Beyond food, we also discuss how everyday habits, such as using
+                built-in containers, reducing plastic use, and general waste
+                management, can have a big impact on the environment.
+              </p>
+            </div>
+
+            <div
+              class="effort"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="300"
+            >
+              <div class="icon">
+                <img src="./icon/communi-icon.svg" alt="community icon" />
+              </div>
+              <div class="underline">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p class="about-effort">
+                We invite individuals, communities and industry players to join
+                in collaborative efforts to sustain the environment through
+                food. Together, we can achieve significant change.
+              </p>
+            </div>
+          </div>
+        </section>
 
         <section class="testimonials">
-            <div class="title"  data-aos="fade-right" data-aos-duration="900"
-            data-aos-delay="300">
-                <h2>What Her Say</h2>
+          <div
+            class="title"
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="300"
+          >
+            <h2>What Her Say</h2>
+          </div>
+          <div class="testimonials-container">
+            <div class="background">
+              <img src="images/bg-testimoni.webp" alt="testimoni icon" />
             </div>
-            <div class="testimonials-container"> 
-                <div class="background"><img src="images/bg-testimoni.webp" alt="testimoni icon"></div>
 
-                <div class="mySwiper slide-container  swiper-container" >
+            <div class="mySwiper slide-container swiper-container">
+              <div class="swiper-wrapper"></div>
 
-                   <div class="swiper-wrapper">
-
-                   </div>
-                
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-                
-
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
+          </div>
         </section>
 
-        <section  id="contact"  class="contact-us">
-            <div class="title"  data-aos="fade-right" data-aos-duration="900"
-            data-aos-delay="300">
-                <h2>Contact Us</h2>
-            </div>
-            <div class="contact-content">
-                
-                <form action="#" class="form-question-container">
-                    <h2 data-aos="fade-right"
-                    data-aos-duration="900"
-                    data-aos-delay="100">do you have any questions</h2>
-                    <div class="input" data-aos="fade-right"
-                    data-aos-duration="900"
-                    data-aos-delay="200">
-                        <h3>Your Name</h3>
-                        <input type="text">
-                    </div>
-                    <div class="input" data-aos="fade-right"
-                    data-aos-duration="900"
-                    data-aos-delay="400">
-                        <h3>Your Email</h3>
-                        <input type="text">
-                    </div>
-                    <div class="input" data-aos="fade-right"
-                    data-aos-duration="900"
-                    data-aos-delay="600">
-                        <h3>Write Your Message</h3>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <button class="send-message" data-aos="fade-right"
-                    data-aos-duration="900"
-                    data-aos-delay="400">
-                        <span>Send</span>
-                        <img src="./icon/send-icon.svg" alt="send icon">
-                    </button>
-                </form>
+        <section id="contact" class="contact-us">
+          <div
+            class="title"
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="300"
+          >
+            <h2>Contact Us</h2>
+          </div>
+          <div class="contact-content">
+            <form action="#" class="form-question-container">
+              <h2
+                data-aos="fade-right"
+                data-aos-duration="900"
+                data-aos-delay="100"
+              >
+                do you have any questions
+              </h2>
+              <div
+                class="input"
+                data-aos="fade-right"
+                data-aos-duration="900"
+                data-aos-delay="200"
+              >
+                <h3>Your Name</h3>
+                <input type="text" />
+              </div>
+              <div
+                class="input"
+                data-aos="fade-right"
+                data-aos-duration="900"
+                data-aos-delay="400"
+              >
+                <h3>Your Email</h3>
+                <input type="text" />
+              </div>
+              <div
+                class="input"
+                data-aos="fade-right"
+                data-aos-duration="900"
+                data-aos-delay="600"
+              >
+                <h3>Write Your Message</h3>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <button
+                class="send-message"
+                data-aos="fade-right"
+                data-aos-duration="900"
+                data-aos-delay="400"
+              >
+                <span>Send</span>
+                <img src="./icon/send-icon.svg" alt="send icon" />
+              </button>
+            </form>
 
-                <div class="contact-information">
-                    <h2 data-aos="fade-left"
-                    data-aos-duration="900"
-                    data-aos-delay="200">Our contact Information</h2>
-                    <div class="contact">
-                        <div class="phone" data-aos="fade-left"
-                        data-aos-duration="900"
-                        data-aos-delay="200">
-                            <h3>Phone:</h3>
-                            <p>+04 555-123-4567</p>
-                            <p>+44 20 1234 5678</p>
-                        </div>
-                        <div class="email" data-aos="fade-left"
-                        data-aos-duration="900"
-                        data-aos-delay="400">
-                            <h3>Email:</h3>
-                            <p>tastyCuisine320@gmail.com</p>
-                        </div>
-                        <div class="address" data-aos="fade-left"
-                        data-aos-duration="900"
-                        data-aos-delay="600">
-                            <h3>Address:</h3>
-                            <p>321 Maple Drive, Nowhereville, State 24680, Australia</p>
-                        </div>
-                    </div>
-                    <div class="description" data-aos="fade-left"
-                    data-aos-duration="900"
-                    data-aos-delay="800">
-                        <p>Thank you for contacting us. We are committed to providing the best service to you. Please do not hesitate to contact us if you require assistance or further information.</p>
-                    </div>
+            <div class="contact-information">
+              <h2
+                data-aos="fade-left"
+                data-aos-duration="900"
+                data-aos-delay="200"
+              >
+                Our contact Information
+              </h2>
+              <div class="contact">
+                <div
+                  class="phone"
+                  data-aos="fade-left"
+                  data-aos-duration="900"
+                  data-aos-delay="200"
+                >
+                  <h3>Phone:</h3>
+                  <p>+04 555-123-4567</p>
+                  <p>+44 20 1234 5678</p>
                 </div>
-
-                
+                <div
+                  class="email"
+                  data-aos="fade-left"
+                  data-aos-duration="900"
+                  data-aos-delay="400"
+                >
+                  <h3>Email:</h3>
+                  <p>tastyCuisine320@gmail.com</p>
+                </div>
+                <div
+                  class="address"
+                  data-aos="fade-left"
+                  data-aos-duration="900"
+                  data-aos-delay="600"
+                >
+                  <h3>Address:</h3>
+                  <p>321 Maple Drive, Nowhereville, State 24680, Australia</p>
+                </div>
+              </div>
+              <div
+                class="description"
+                data-aos="fade-left"
+                data-aos-duration="900"
+                data-aos-delay="800"
+              >
+                <p>
+                  Thank you for contacting us. We are committed to providing the
+                  best service to you. Please do not hesitate to contact us if
+                  you require assistance or further information.
+                </p>
+              </div>
             </div>
-        
+          </div>
         </section>
+      </main>
 
-        <footer>
-            <div class="logo" data-aos="zoom-in"
-            data-aos-duration="400"
-            data-aos-delay="900">
-                <img src="./images/name-web.png" alt="Tasty Cuisine logo">
+      <footer>
+        <div
+          class="logo"
+          data-aos="zoom-in"
+          data-aos-duration="400"
+          data-aos-delay="900"
+        >
+          <img src="./images/name-web.png" alt="Tasty Cuisine logo" />
+        </div>
+        <div class="footer-content">
+          <div class="links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#recipe">Recipe</a></li>
+              <li><a href="#article">Article</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Cookie policy</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Common question</a></li>
+              <li><a href="#">Community assistance</a></li>
+            </ul>
+          </div>
+          <div class="line-footer"></div>
+          <div class="from-us">
+            <div class="social-media">
+              <a href="#pinterest">
+                <img src="./icon/pinterest-icon.svg" alt="pinterest-icon" />
+              </a>
+              <a href="#instagram">
+                <img src="./icon/instagram-icon.svg" alt="instagram-icon" />
+              </a>
+              <a href="#twitter">
+                <img src="./icon/twitter-x-icon.svg" alt="twitter-x-icon" />
+              </a>
+              <a href="#facebook">
+                <img src="./icon/facebook-icon.svg" alt="facebook-icon" />
+              </a>
             </div>
-            <div class="footer-content">
-                <div class="links">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#recipe">Recipe</a></li>
-                        <li><a href="#article">Article</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul> 
-                    <ul>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Cookie policy</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Common question</a></li>
-                        <li><a href="#">Community assistance</a></li>
-                    </ul>
-                </div>
-                <div class="line-footer"></div>
-                <div class="from-us">
-                    <div class="social-media">
-                        <a href="#pinterest">
-                            <img src="./icon/pinterest-icon.svg" alt="pinterest-icon">
-                        </a>
-                        <a href="#instagram">
-                            <img src="./icon/instagram-icon.svg" alt="instagram-icon">
-                        </a>
-                       <a href="#twitter">
-                        <img src="./icon/twitter-x-icon.svg" alt="twitter-x-icon">
-                       </a>
-                        <a href="#facebook">
-                            <img src="./icon/facebook-icon.svg" alt="facebook-icon">
-                        </a>
-
-                    </div>
-                    <p class="expression">
-                        We thank food lovers who have supported our trip. With your trust, we are committed to presenting authentic and innovative tastes, we continue to try to provide the best in the culinary world.
-                    </p>
-                    <div class="by">
-                        ©2023  Muhammad Ismail
-                    </div>
-                </div>
+            <p class="expression">
+              We thank food lovers who have supported our trip. With your trust,
+              we are committed to presenting authentic and innovative tastes, we
+              continue to try to provide the best in the culinary world.
+            </p>
+            <div class="by">
+              ©2023 Muhammad Ismail
             </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-    </main>
-    
-   <!-- aos js library animation -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-   <script src="index.js" defer></script>
-
-</body>
+    <!-- aos js library animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="index.js" defer></script>
+  </body>
 </html>
